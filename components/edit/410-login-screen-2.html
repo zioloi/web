@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" class="antialiased">
+
+	<head>
+
+		<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="csrf-token" content="1n5YvA0wF811n9eect9ly5OEfmB56JvyzVakJlnb">
+<meta name="author" content="taddart">
+<meta property="fb:app_id" content="959738874378368" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@webpxs" />
+<meta name="twitter:title" content="taddart" />
+<meta name="twitter:description" content="Stylish Business Intelligence made with Bootstrap 5 by taddart" />
+<meta name="twitter:creator" content="@webpxs" />
+
+<meta property="og:url" content="https://taddart.io/components/edit/410-login-screen-2" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="taddart" />
+<meta property="og:description" content="Stylish Business Intelligence made with Bootstrap 5 by taddart" />
+
+<meta property="description" content="Stylish Business Intelligence made with Bootstrap 5 by taddart" />
+
+
+
+<meta name="url" content="https://taddart.io/components/edit/410-login-screen-2" />
+<meta property="og:url" content="https://taddart.io/components/edit/410-login-screen-2" />
+
+
+<link rel="image_src" href="../../img/og/taddart.jpg" />
+<meta name="image" content="https://taddart.io/img/og/taddart.jpg" />
+<meta property="og:image" content="https://taddart.io/img/og/taddart.jpg" />
+<meta name="twitter:image" content="https://taddart.io/img/og/taddart.jpg" />
+
+<title>Le big data and Data Discovery made by taddart</title>
+		<!-- Styles -->
+<link rel="stylesheet" type="text/css" href="../../css/main-id=88bd2dedef769c4dd7ad.css">
+<link rel="stylesheet" type="text/css" href="../../css/utilities-id=0ba008666fa7d704fbab.css">
+<link rel="stylesheet" type="text/css" href="../../css/demo-id=969ff5d825cdc67640f6.css">
+
+<!-- Favicon -->
+<link href="../../img/brand/favicon.png" rel="icon" type="image/png">
+<link href="../../img/brand/apple-touch.png" rel="apple-touch-icon-precomposed" />
+
+<!-- Vendor -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
+<link rel="stylesheet" href="../../vendor/icons/css/all.css">
+<link rel="stylesheet" href="../../vendor/monaco-editor/theme.css">
+<style >[wire\:loading], [wire\:loading\.delay], [wire\:loading\.inline-block], [wire\:loading\.inline], [wire\:loading\.block], [wire\:loading\.flex], [wire\:loading\.table], [wire\:loading\.grid], [wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short], [wire\:loading\.delay\.long], [wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest] {display:none;}[wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}input:-webkit-autofill, select:-webkit-autofill, textarea:-webkit-autofill {animation-duration: 50000s;animation-name: livewireautofill;}@keyframes livewireautofill { from {} }</style>
+		<!-- Plausible -->
+  <script defer data-domain="taddart.io" src="https://plausible.io/js/plausible.js"></script>
+  <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+  <!-- GTM -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MF4DZVH');</script>
+  
+	</head>
+
+	<body class="font-sans">
+
+		
+		<!-- Notifications -->
+				<div wire:id="4pHv9bxoNsyKyIgR7tnY" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;4pHv9bxoNsyKyIgR7tnY&quot;,&quot;name&quot;:&quot;notification&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;components\/edit\/410-login-screen-2&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[&quot;success&quot;,&quot;warning&quot;,&quot;danger&quot;,&quot;info&quot;]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;832c06c1&quot;,&quot;data&quot;:{&quot;message&quot;:null,&quot;type&quot;:null,&quot;show&quot;:false},&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;89160a82edc37242e3aa46d72e86100e3220755e2d931b8287acd930e262b18e&quot;}}">
+	</div>
+
+<!-- Livewire Component wire-end:4pHv9bxoNsyKyIgR7tnY -->
+		<!-- Feedback modal -->
+		<div class="modal fade " id="modalFeedback" "tabindex"="-1" "aria-hidden"="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content overflow-hidden shadow-6 rounded-4">
+			
+			<div class="modal-body ">
+				<div class="d-flex justify-content-between align-items-center mb-5">
+			<h5>Share your feedback</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<form wire:id="DcvAwpjhKWtZ6uoUs41y" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;DcvAwpjhKWtZ6uoUs41y&quot;,&quot;name&quot;:&quot;feedback.get-feedback&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;components\/edit\/410-login-screen-2&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;48f82fe8&quot;,&quot;data&quot;:{&quot;title&quot;:null,&quot;text&quot;:null,&quot;rating&quot;:null},&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;72c743b7677973e950669cc02e3ae53b9ff6cc2d02b280b68b0fbf3467b9b2cc&quot;}}" wire:submit.prevent="save">
+	<input type="hidden" name="_token" value="1n5YvA0wF811n9eect9ly5OEfmB56JvyzVakJlnb">	<div class="mb-5">
+		<input wire:model="title" type="text" class="form-control " name="title" placeholder="Title" />
+			</div>
+	<div class="mb-5">
+		<textarea wire:model="text" rows="4" class="form-control " name="text" data-toggle="autosize" placeholder="Your feedback"></textarea>
+			</div>
+	<div class="d-flex justify-content-between">
+		<div class="hstack gap-2">
+			<input wire:model="rating" type="radio" name="rating-options" class="btn-check" id="rating5" value="5" />
+			<label class="btn btn-sm btn-neutral btn-square text-lg rounded-circle" for="rating5">😍</label>
+			<input wire:model="rating" type="radio" name="rating-options" class="btn-check" id="rating4" value="4" />
+			<label class="btn btn-sm btn-neutral btn-square text-lg rounded-circle" for="rating4">😀</label>
+			<input wire:model="rating" type="radio" name="rating-options" class="btn-check" id="rating3" value="3" />
+			<label class="btn btn-sm btn-neutral btn-square text-lg rounded-circle" for="rating3">😕</label>
+			<input wire:model="rating" type="radio" name="rating-options" class="btn-check" id="rating2" value="2" />
+			<label class="btn btn-sm btn-neutral btn-square text-lg rounded-circle" for="rating2">😓</label>
+		</div>
+		<button type="submit" class="btn btn-sm btn-dark">Send</button>
+	</div>
+</form>
+
+<!-- Livewire Component wire-end:DcvAwpjhKWtZ6uoUs41y -->
+			</div>
+
+					</div>
+	</div>
+</div>
+
+		<!-- App container -->
+		<div id="app" class="d-flex flex-column min-h-screen">
+
+			
+			
+			<main class="d-flex flex-grow-1">
+				<div class="w-full">
+					<div class="container-fluid p-0 h-full">
+    <div wire:id="2BnGNwTaguQlUeA04HcL" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;2BnGNwTaguQlUeA04HcL&quot;,&quot;name&quot;:&quot;snippets.edit-snippet&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;components\/edit\/410-login-screen-2&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[&quot;refreshSnippet&quot;]},&quot;serverMemo&quot;:{&quot;children&quot;:{&quot;l2672342668-0&quot;:{&quot;id&quot;:&quot;pPug6UoehbJdmqKdfOU3&quot;,&quot;tag&quot;:&quot;div&quot;},&quot;l2672342668-1&quot;:{&quot;id&quot;:&quot;aJBaS4VcIsGZxZVqiFFF&quot;,&quot;tag&quot;:&quot;div&quot;}},&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;b6260e43&quot;,&quot;data&quot;:{&quot;snippet&quot;:[],&quot;mode&quot;:&quot;preview&quot;,&quot;has_editor_code&quot;:false},&quot;dataMeta&quot;:{&quot;models&quot;:{&quot;snippet&quot;:{&quot;class&quot;:&quot;App\\Models\\Snippet&quot;,&quot;id&quot;:410,&quot;relations&quot;:[&quot;category&quot;,&quot;category.category&quot;],&quot;connection&quot;:&quot;mysql&quot;}}},&quot;checksum&quot;:&quot;5f49ac45f603456c8d8cac6ee084febf4e8d6341d664d94d23b4eb438792ce7a&quot;}}" class="d-flex flex-column h-full">
+		<div class="d-flex align-items-center border-bottom px-6 py-3">
+		<div class="flex-auto">
+			<div class="d-flex align-items-center text-limit gap-4">
+				<div>
+										<a class="navbar-brand text-center" href="../../Data Discovery/auth-Data Discovery.html">
+						<div class="w-md-auto  text-dark">
+  <svg class="w-auto h-8" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 500C0 223.858 223.858 0 500 0C776.142 0 1000 223.858 1000 500C1000 776.142 776.142 1000 500 1000C223.858 1000 0 776.142 0 500Z" fill="currentColor"/>
+    <path d="M200.586 392.877C181.963 360.623 193.015 319.379 225.269 300.757C257.524 282.135 298.767 293.186 317.39 325.44L494.411 632.051C513.033 664.305 501.982 705.549 469.728 724.171C437.473 742.793 396.229 731.742 377.607 699.488L200.586 392.877Z" fill="white"/>
+    <path d="M453.948 392.877C435.326 360.623 446.377 319.379 478.631 300.757C510.886 282.135 552.129 293.186 570.752 325.44L747.773 632.051C766.395 664.305 755.344 705.549 723.09 724.171C690.835 742.793 649.591 731.742 630.969 699.488L453.948 392.877Z" fill="white"/>
+    <path d="M673.592 334.475C673.592 297.231 703.784 267.039 741.029 267.039C778.273 267.039 808.465 297.231 808.465 334.475C808.465 371.72 778.273 401.912 741.029 401.912C703.784 401.912 673.592 371.72 673.592 334.475Z" fill="white"/>
+  </svg>
+</div>
+					</a>
+									</div>
+				<div class="vr opacity-20 my-1"></div>
+				<h1 class="h5 font-semibold">
+					Edit template
+				</h1>
+			</div>
+		</div>
+		<div class="hstack gap-3 align-items-center ms-auto">
+						<button wire:click="previewChanges()" type="button" class="btn btn-sm btn-primary">Preview</button>
+			<button wire:click="toggleMode('code')" type="button" class="btn btn-sm btn-neutral">
+				<i class="far fa-angle-left me-1"></i><i class="far fa-angle-right me-2"></i>Code
+			</button>
+						<span class="vr bg-dark bg-opacity-10 ms-2 me-1"></span>
+			<button wire:click="copyCode" class="btn px-2 transform scale-110-hover text-muted text-primary-hover d-none d-md-block shadow-none" id="btn-copy-code">
+				<i class="far fa-clipboard"></i>
+			</button>
+					</div>
+	</div>
+	<div class="bg-surface-primary flex-fill">
+		<div class="position-relative w-full h-full">
+						<div class="flex-shrink-0 w-full h-full d-block">
+								<div wire:id="pPug6UoehbJdmqKdfOU3" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;pPug6UoehbJdmqKdfOU3&quot;,&quot;name&quot;:&quot;editor.editor-preview&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;components\/edit\/410-login-screen-2&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[&quot;refreshSnippet&quot;,&quot;codeChanged&quot;,&quot;refreshPreview&quot;]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;6cd7bb8b&quot;,&quot;data&quot;:{&quot;code&quot;:&quot;&lt;div class=\&quot;px-5 py-5 p-lg-0 bg-surface-secondary\&quot;&gt;\n  &lt;div class=\&quot;d-flex justify-content-center\&quot;&gt;\n    &lt;div class=\&quot;col-lg-5 col-xl-4 p-12 p-xl-20 position-fixed start-0 top-0 h-screen overflow-y-hidden bg-primary d-none d-lg-flex flex-column\&quot;&gt;\n      &lt;!-- Logo --&gt;\n      &lt;a class=\&quot;d-block\&quot; href=\&quot;#\&quot;&gt;\n        &lt;img src=\&quot;https:\/\/preview.taddart.io\/web\/img\/logos\/clever-light.svg\&quot; class=\&quot;h-10\&quot; alt=\&quot;...\&quot;&gt;\n      &lt;\/a&gt;\n      &lt;!-- Title --&gt;\n      &lt;div class=\&quot;mt-32 mb-20\&quot;&gt;\n        &lt;h1 class=\&quot;ls-tight font-bolder display-6 text-white mb-5\&quot;&gt;\n          Let\u2019s build something amazing today.\n        &lt;\/h1&gt;\n        &lt;p class=\&quot;text-white text-opacity-75\&quot;&gt;\n          Maybe some text here will help me see it better. Oh God. Oke, let\u2019s do it then.\n        &lt;\/p&gt;\n      &lt;\/div&gt;\n      &lt;!-- Circle --&gt;\n      &lt;div class=\&quot;w-56 h-56 bg-orange-500 rounded-circle position-absolute bottom-0 end-20 transform translate-y-1\/3\&quot;&gt;&lt;\/div&gt;\n    &lt;\/div&gt;\n    &lt;div class=\&quot;col-12 col-md-9 col-lg-7 offset-lg-5 border-left-lg min-h-lg-screen d-flex flex-column justify-content-center py-lg-16 px-lg-20 position-relative\&quot;&gt;\n      &lt;div class=\&quot;row\&quot;&gt;\n        &lt;div class=\&quot;col-lg-10 col-md-9 col-xl-6 mx-auto ms-xl-0\&quot;&gt;\n          &lt;div class=\&quot;mt-10 mt-lg-5 mb-6 d-flex align-items-center d-lg-block\&quot;&gt;\n            &lt;span class=\&quot;d-inline-block d-lg-block h1 mb-lg-6 me-3\&quot;&gt;\ud83d\udc4b&lt;\/span&gt;\n            &lt;h1 class=\&quot;ls-tight font-bolder h2\&quot;&gt;\n              Nice to see you!\n            &lt;\/h1&gt;\n          &lt;\/div&gt;\n          &lt;form&gt;\n            &lt;div class=\&quot;mb-5\&quot;&gt;\n              &lt;label class=\&quot;form-label\&quot; for=\&quot;email\&quot;&gt;Email address&lt;\/label&gt;\n              &lt;input type=\&quot;email\&quot; class=\&quot;form-control form-control-muted\&quot; id=\&quot;email\&quot;&gt;\n            &lt;\/div&gt;\n            &lt;div class=\&quot;mb-5\&quot;&gt;\n              &lt;label class=\&quot;form-label\&quot; for=\&quot;password\&quot;&gt;Password&lt;\/label&gt;\n              &lt;input type=\&quot;password\&quot; class=\&quot;form-control form-control-muted\&quot; id=\&quot;password\&quot; autocomplete=\&quot;current-password\&quot;&gt;\n            &lt;\/div&gt;\n            &lt;div class=\&quot;mb-5\&quot;&gt;\n              &lt;div class=\&quot;form-check\&quot;&gt;\n                &lt;input class=\&quot;form-check-input\&quot; type=\&quot;checkbox\&quot; name=\&quot;check_example\&quot; id=\&quot;check_example\&quot;&gt;\n                &lt;label class=\&quot;form-check-label\&quot; for=\&quot;check_example\&quot;&gt;\n                  Keep me logged in\n                &lt;\/label&gt;\n              &lt;\/div&gt;\n            &lt;\/div&gt;\n            &lt;div&gt;\n              &lt;a href=\&quot;#\&quot; class=\&quot;btn btn-primary w-full\&quot;&gt;\n                Sign in\n              &lt;\/a&gt;\n            &lt;\/div&gt;\n          &lt;\/form&gt;\n          &lt;div class=\&quot;py-5 text-center\&quot;&gt;\n            &lt;span class=\&quot;text-xs text-uppercase font-semibold\&quot;&gt;or&lt;\/span&gt;\n          &lt;\/div&gt;\n          &lt;div class=\&quot;row\&quot;&gt;\n            &lt;div class=\&quot;col-sm-6\&quot;&gt;\n              &lt;a href=\&quot;#\&quot; class=\&quot;btn btn-neutral w-full\&quot;&gt;\n                &lt;span class=\&quot;icon icon-sm pe-2\&quot;&gt;\n                  &lt;svg width=\&quot;24\&quot; height=\&quot;24\&quot; viewBox=\&quot;0 0 24 24\&quot; fill=\&quot;none\&quot; xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot;&gt;\n                    &lt;g clip-path=\&quot;url(#clip0)\&quot;&gt;\n                      &lt;path d=\&quot;M12 -3.05176e-05C5.3833 -3.05176e-05 0 5.38327 0 12C0 17.7383 3.94971 22.7802 9.3916 23.9883C9.53906 24.021 9.69434 23.9848 9.81299 23.8901C9.93115 23.7949 10 23.6518 10 23.5V20.5C10 20.2236 9.77637 20 9.5 20H8.5C7.31494 20 6.25684 18.5381 5.40625 17.3637C5.32227 17.2475 5.23926 17.1333 5.15723 17.0215C5.50635 17.185 5.84717 17.3559 6.13037 17.498C6.95068 17.9091 7.72559 18.2978 8.35938 18.4795C8.38721 18.4887 8.42139 18.5053 8.45947 18.5224C8.70361 18.6323 9.15723 18.8364 9.56396 18.5717C10 18.2895 10 17.6953 10 17.5V17.1513C10 16.9277 9.85156 16.7314 9.63623 16.6704C6.86328 15.8847 5 13.8071 5 11.5C5 10.3003 5.49268 9.15475 6.42529 8.18796C6.56885 8.03903 6.60596 7.81784 6.51904 7.63034C6.14697 6.82809 6.22559 5.73679 6.66748 5.08151C7.25098 5.30905 8.00781 5.7861 8.49951 6.37009C8.63477 6.53024 8.85693 6.5903 9.05371 6.51755C10.9287 5.83005 13.0713 5.83005 14.9463 6.51755C15.145 6.59128 15.3662 6.53073 15.5005 6.37009C15.9922 5.7861 16.749 5.30905 17.3325 5.08151C17.7744 5.73679 17.853 6.82809 17.481 7.63034C17.394 7.81784 17.4312 8.03903 17.5747 8.18796C18.5073 9.15475 19 10.3003 19 11.5C19 13.9218 16.9302 16.0908 13.9668 16.7739C13.8154 16.8091 13.689 16.9121 13.6245 17.0532C13.5601 17.1943 13.5645 17.3574 13.6372 17.4946C13.8848 17.9633 14 18.6006 14 19.5V23.5C14 23.6518 14.0688 23.7949 14.187 23.8901C14.2769 23.9619 14.3872 24 14.5 24C14.5361 24 14.5723 23.9961 14.6084 23.9883C20.0503 22.7802 24 17.7382 24 12C24 5.38327 18.6167 -3.05176e-05 12 -3.05176e-05Z\&quot; fill=\&quot;#303C42\&quot; \/&gt;\n                      &lt;path opacity=\&quot;0.2\&quot; d=\&quot;M9.63623 16.9203C9.85156 16.9814 10 17.1777 10 17.4013V17.1513C10 16.9277 9.85156 16.7314 9.63623 16.6703C6.91486 15.8993 5.08038 13.8823 5.0127 11.6267C5.01154 11.6682 5 11.7083 5 11.7499C5 14.0571 6.86328 16.1347 9.63623 16.9203Z\&quot; fill=\&quot;white\&quot; \/&gt;\n                      &lt;path opacity=\&quot;0.2\&quot; d=\&quot;M13.9668 17.0239C16.9302 16.3408 19 14.1718 19 11.7499C19 11.7072 18.9882 11.6659 18.9869 11.6232C18.9171 13.9944 16.8791 16.1025 13.9668 16.7739C13.8154 16.809 13.689 16.912 13.6245 17.0532C13.5763 17.1587 13.5794 17.2739 13.6081 17.3841C13.6153 17.3572 13.6128 17.3289 13.6245 17.3032C13.689 17.162 13.8154 17.059 13.9668 17.0239Z\&quot; fill=\&quot;white\&quot; \/&gt;\n                      &lt;path opacity=\&quot;0.2\&quot; d=\&quot;M12 -6.10352e-05C5.3833 -6.10352e-05 0 5.38324 0 11.9999C0 12.0455 0.0053101 12.09 0.0057983 12.1354C0.0681763 5.57184 5.42194 0.249939 12 0.249939C18.5781 0.249939 23.9318 5.57184 23.9942 12.1354C23.9947 12.09 24 12.0455 24 11.9999C24 5.38324 18.6167 -6.10352e-05 12 -6.10352e-05Z\&quot; fill=\&quot;white\&quot; \/&gt;\n                      &lt;path opacity=\&quot;0.1\&quot; d=\&quot;M9.3916 23.9883C9.53906 24.021 9.69434 23.9848 9.81299 23.8901C9.93115 23.7949 10 23.6518 10 23.5V23.25C10 23.4018 9.93115 23.5449 9.81299 23.6401C9.69434 23.7348 9.53906 23.771 9.3916 23.7383C3.99286 22.5398 0.0678101 17.567 0.0057983 11.8854C0.0054321 11.924 0 11.9613 0 12C0 17.7383 3.94971 22.7802 9.3916 23.9883Z\&quot; fill=\&quot;#010101\&quot; \/&gt;\n                      &lt;path opacity=\&quot;0.1\&quot; d=\&quot;M14.6084 23.7383C14.5723 23.7461 14.5361 23.75 14.5 23.75C14.3872 23.75 14.2769 23.7119 14.187 23.6401C14.0688 23.5449 14 23.4018 14 23.25V23.5C14 23.6518 14.0688 23.7949 14.187 23.8901C14.2769 23.9619 14.3872 24 14.5 24C14.5361 24 14.5723 23.9961 14.6084 23.9883C20.0503 22.7802 24 17.7383 24 12C24 11.9613 23.9946 11.924 23.9942 11.8854C23.9322 17.567 20.0071 22.5398 14.6084 23.7383Z\&quot; fill=\&quot;#010101\&quot; \/&gt;\n                      &lt;path opacity=\&quot;0.1\&quot; d=\&quot;M17.3325 4.83441C16.749 5.06195 15.9922 5.539 15.5005 6.12299C15.3662 6.28363 15.145 6.34418 14.9463 6.27045C13.0713 5.58295 10.9287 5.58295 9.05371 6.27045C8.85694 6.3432 8.63477 6.28314 8.49952 6.12299C8.00782 5.539 7.25098 5.06195 6.66748 4.83441C6.41523 5.2085 6.29718 5.72455 6.29798 6.24799C6.33338 5.8139 6.45588 5.39819 6.66748 5.08441C7.25098 5.31195 8.00782 5.789 8.49952 6.37299C8.63477 6.53314 8.85694 6.5932 9.05371 6.52045C10.9287 5.83295 13.0713 5.83295 14.9463 6.52045C15.145 6.59418 15.3662 6.53363 15.5005 6.37299C15.9922 5.789 16.749 5.31195 17.3325 5.08441C17.5441 5.39819 17.6666 5.8139 17.702 6.24799C17.7028 5.72455 17.5848 5.2085 17.3325 4.83441Z\&quot; fill=\&quot;#010101\&quot; \/&gt;\n                      &lt;path d=\&quot;M12 -3.05176e-05C5.3833 -3.05176e-05 0 5.38327 0 12C0 17.7383 3.94971 22.7802 9.3916 23.9883C9.53906 24.021 9.69434 23.9848 9.81299 23.8901C9.93115 23.7949 10 23.6518 10 23.5V20.5C10 20.2236 9.77637 20 9.5 20H8.5C7.31494 20 6.25684 18.5381 5.40625 17.3637C5.32227 17.2475 5.23926 17.1333 5.15723 17.0215C5.50635 17.185 5.84717 17.3559 6.13037 17.498C6.95068 17.9091 7.72559 18.2978 8.35938 18.4795C8.38721 18.4887 8.42139 18.5053 8.45947 18.5224C8.70361 18.6323 9.15723 18.8364 9.56396 18.5717C10 18.2895 10 17.6953 10 17.5V17.1513C10 16.9277 9.85156 16.7314 9.63623 16.6704C6.86328 15.8847 5 13.8071 5 11.5C5 10.3003 5.49268 9.15475 6.42529 8.18796C6.56885 8.03903 6.60596 7.81784 6.51904 7.63034C6.14697 6.82809 6.22559 5.73679 6.66748 5.08151C7.25098 5.30905 8.00781 5.7861 8.49951 6.37009C8.63477 6.53024 8.85693 6.5903 9.05371 6.51755C10.9287 5.83005 13.0713 5.83005 14.9463 6.51755C15.145 6.59128 15.3662 6.53073 15.5005 6.37009C15.9922 5.7861 16.749 5.30905 17.3325 5.08151C17.7744 5.73679 17.853 6.82809 17.481 7.63034C17.394 7.81784 17.4312 8.03903 17.5747 8.18796C18.5073 9.15475 19 10.3003 19 11.5C19 13.9218 16.9302 16.0908 13.9668 16.7739C13.8154 16.8091 13.689 16.9121 13.6245 17.0532C13.5601 17.1943 13.5645 17.3574 13.6372 17.4946C13.8848 17.9633 14 18.6006 14 19.5V23.5C14 23.6518 14.0688 23.7949 14.187 23.8901C14.2769 23.9619 14.3872 24 14.5 24C14.5361 24 14.5723 23.9961 14.6084 23.9883C20.0503 22.7802 24 17.7382 24 12C24 5.38327 18.6167 -3.05176e-05 12 -3.05176e-05Z\&quot; fill=\&quot;url(#paint0_linear)\&quot; \/&gt;\n                    &lt;\/g&gt;\n                    &lt;defs&gt;\n                      &lt;linearGradient id=\&quot;paint0_linear\&quot; x1=\&quot;1.07434\&quot; y1=\&quot;7.03731\&quot; x2=\&quot;22.8646\&quot; y2=\&quot;17.1983\&quot; gradientUnits=\&quot;userSpaceOnUse\&quot;&gt;\n                        &lt;stop stop-color=\&quot;white\&quot; stop-opacity=\&quot;0.2\&quot; \/&gt;\n                        &lt;stop offset=\&quot;1\&quot; stop-color=\&quot;white\&quot; stop-opacity=\&quot;0\&quot; \/&gt;\n                      &lt;\/linearGradient&gt;\n                      &lt;clipPath id=\&quot;clip0\&quot;&gt;\n                        &lt;rect width=\&quot;24\&quot; height=\&quot;24\&quot; fill=\&quot;white\&quot; \/&gt;\n                      &lt;\/clipPath&gt;\n                    &lt;\/defs&gt;\n                  &lt;\/svg&gt;\n                &lt;\/span&gt;\n                Github\n              &lt;\/a&gt;\n            &lt;\/div&gt;\n            &lt;div class=\&quot;col-sm-6\&quot;&gt;\n              &lt;a href=\&quot;#\&quot; class=\&quot;btn btn-neutral w-full\&quot;&gt;\n                &lt;span class=\&quot;icon icon-sm pe-2\&quot;&gt;\n                  &lt;svg width=\&quot;24\&quot; height=\&quot;24\&quot; viewBox=\&quot;0 0 24 24\&quot; fill=\&quot;none\&quot; xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot;&gt;\n                    &lt;path d=\&quot;M12 5C13.6168 5 15.1013 5.55353 16.2863 6.47406L19.9235 3.00409C17.8088 1.13995 15.0406 0 12 0C7.3924 0 3.39667 2.59991 1.3858 6.40985L5.43024 9.60278C6.40997 6.91937 8.97748 5 12 5Z\&quot; fill=\&quot;#F44336\&quot; \/&gt;\n                    &lt;path d=\&quot;M23.8961 13.5018C23.9586 13.0102 24 12.5087 24 12C24 11.1422 23.9063 10.3068 23.7352 9.5H12V14.5H18.4862C17.9615 15.8638 17.0272 17.0178 15.838 17.8195L19.8975 21.0243C22.0494 19.1354 23.522 16.4904 23.8961 13.5018Z\&quot; fill=\&quot;#2196F3\&quot; \/&gt;\n                    &lt;path d=\&quot;M5 12C5 11.1566 5.15686 10.3516 5.43024 9.60278L1.3858 6.40985C0.504333 8.08002 0 9.98016 0 12C0 13.9973 0.495056 15.8763 1.35822 17.533L5.40778 14.3359C5.14844 13.6044 5 12.8204 5 12Z\&quot; fill=\&quot;#FFC107\&quot; \/&gt;\n                    &lt;path d=\&quot;M12 19C8.95447 19 6.37042 17.0515 5.40778 14.3359L1.35822 17.533C3.35925 21.3735 7.36981 24 12 24C15.0278 24 17.7888 22.8752 19.8975 21.0243L15.838 17.8195C14.7412 18.5589 13.4284 19 12 19Z\&quot; fill=\&quot;#00B060\&quot; \/&gt;\n                    &lt;path opacity=\&quot;0.1\&quot; d=\&quot;M12 23.75C8.46832 23.75 5.29272 22.2928 3.04755 19.9713C5.24536 22.4378 8.43646 24 12 24C15.5306 24 18.6953 22.4686 20.8881 20.0408C18.6496 22.3246 15.4981 23.75 12 23.75Z\&quot; fill=\&quot;black\&quot; \/&gt;\n                    &lt;path opacity=\&quot;0.1\&quot; d=\&quot;M12 14.25V14.5H18.4862L18.5875 14.25H12Z\&quot; fill=\&quot;black\&quot; \/&gt;\n                    &lt;path d=\&quot;M23.9944 12.147C23.9952 12.0978 24 12.0494 24 12C24 11.986 23.9978 11.9725 23.9977 11.9586C23.9971 12.0215 23.9939 12.0838 23.9944 12.147Z\&quot; fill=\&quot;#E6E6E6\&quot; \/&gt;\n                    &lt;path opacity=\&quot;0.2\&quot; d=\&quot;M12 9.5V9.75H23.7856C23.7698 9.66748 23.7526 9.58191 23.7352 9.5H12Z\&quot; fill=\&quot;white\&quot; \/&gt;\n                    &lt;path d=\&quot;M23.7352 9.5H12V14.5H18.4862C17.4775 17.1216 14.9772 19 12 19C8.13403 19 5 15.866 5 12C5 8.13397 8.13403 5 12 5C13.4019 5 14.6939 5.43066 15.7885 6.14069C15.9561 6.24957 16.1289 6.35181 16.2863 6.47406L19.9235 3.00409L19.8414 2.94098C17.7369 1.11707 15.0035 0 12 0C5.37256 0 0 5.37256 0 12C0 18.6274 5.37256 24 12 24C18.1177 24 23.1555 19.4188 23.8961 13.5018C23.9586 13.0102 24 12.5087 24 12C24 11.1422 23.9063 10.3068 23.7352 9.5Z\&quot; fill=\&quot;url(#paint0_linear)\&quot; \/&gt;\n                    &lt;path opacity=\&quot;0.1\&quot; d=\&quot;M15.7885 5.89069C14.6939 5.18066 13.4019 4.75 12 4.75C8.13403 4.75 5 7.88397 5 11.75C5 11.7922 5.00057 11.8251 5.0013 11.8672C5.06874 8.05951 8.17621 5 12 5C13.4019 5 14.6939 5.43066 15.7885 6.14069C15.9561 6.24957 16.1289 6.35181 16.2863 6.47406L19.9235 3.00409L16.2863 6.22406C16.1289 6.10181 15.9561 5.99957 15.7885 5.89069Z\&quot; fill=\&quot;black\&quot; \/&gt;\n                    &lt;path opacity=\&quot;0.2\&quot; d=\&quot;M12 0.25C14.975 0.25 17.6829 1.34839 19.7793 3.1416L19.9235 3.00409L19.8134 2.90827C17.709 1.08436 15.0035 0 12 0C5.37256 0 0 5.37256 0 12C0 12.0422 0.0058594 12.0829 0.0062866 12.125C0.0740356 5.55585 5.41473 0.25 12 0.25Z\&quot; fill=\&quot;white\&quot; \/&gt;\n                    &lt;defs&gt;\n                      &lt;linearGradient id=\&quot;paint0_linear\&quot; x1=\&quot;0\&quot; y1=\&quot;12\&quot; x2=\&quot;24\&quot; y2=\&quot;12\&quot; gradientUnits=\&quot;userSpaceOnUse\&quot;&gt;\n                        &lt;stop stop-color=\&quot;white\&quot; stop-opacity=\&quot;0.2\&quot; \/&gt;\n                        &lt;stop offset=\&quot;1\&quot; stop-color=\&quot;white\&quot; stop-opacity=\&quot;0\&quot; \/&gt;\n                      &lt;\/linearGradient&gt;\n                    &lt;\/defs&gt;\n                  &lt;\/svg&gt;\n                &lt;\/span&gt;\n                Google\n              &lt;\/a&gt;\n            &lt;\/div&gt;\n          &lt;\/div&gt;\n          &lt;div class=\&quot;my-6\&quot;&gt;\n            &lt;small&gt;Don&#039;t have an account?&lt;\/small&gt;\n            &lt;a href=\&quot;#\&quot; class=\&quot;text-warning text-sm font-semibold\&quot;&gt;Sign up&lt;\/a&gt;\n          &lt;\/div&gt;\n        &lt;\/div&gt;\n      &lt;\/div&gt;\n    &lt;\/div&gt;\n  &lt;\/div&gt;\n&lt;\/div&gt;&quot;,&quot;editor&quot;:null,&quot;demo_classes&quot;:&quot;group-application-pages group-auth-Data Discovery component-screen-auth-login-2&quot;},&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;cd3b92bf9628ccc4387971e00ea6851ebef5959860a3cfb3d2fe46490794f85a&quot;}}" class="h-full overflow-auto bg-gray-100">
+  <iframe wire:init="setEditorPreview" class="w-full h-full" scrolling="yes" id="editor-preview" data-component="group-application-pages group-auth-Data Discovery component-screen-auth-login-2"></iframe>
+</div>
+
+<!-- Livewire Component wire-end:pPug6UoehbJdmqKdfOU3 -->			</div>
+			<div class="flex-shrink-0 w-full h-full d-none">
+				<div wire:id="aJBaS4VcIsGZxZVqiFFF" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;aJBaS4VcIsGZxZVqiFFF&quot;,&quot;name&quot;:&quot;editor.editor-code&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;components\/edit\/410-login-screen-2&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[&quot;refreshSnippet&quot;,&quot;setEditorCode&quot;]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;89a19533&quot;,&quot;data&quot;:{&quot;code&quot;:&quot;&lt;div class=\&quot;px-5 py-5 p-lg-0 bg-surface-secondary\&quot;&gt;\n  &lt;div class=\&quot;d-flex justify-content-center\&quot;&gt;\n    &lt;div class=\&quot;col-lg-5 col-xl-4 p-12 p-xl-20 position-fixed start-0 top-0 h-screen overflow-y-hidden bg-primary d-none d-lg-flex flex-column\&quot;&gt;\n      &lt;!-- Logo --&gt;\n      &lt;a class=\&quot;d-block\&quot; href=\&quot;#\&quot;&gt;\n        &lt;img src=\&quot;https:\/\/preview.taddart.io\/web\/img\/logos\/clever-light.svg\&quot; class=\&quot;h-10\&quot; alt=\&quot;...\&quot;&gt;\n      &lt;\/a&gt;\n      &lt;!-- Title --&gt;\n      &lt;div class=\&quot;mt-32 mb-20\&quot;&gt;\n        &lt;h1 class=\&quot;ls-tight font-bolder display-6 text-white mb-5\&quot;&gt;\n          Let\u2019s build something amazing today.\n        &lt;\/h1&gt;\n        &lt;p class=\&quot;text-white text-opacity-75\&quot;&gt;\n          Maybe some text here will help me see it better. Oh God. Oke, let\u2019s do it then.\n        &lt;\/p&gt;\n      &lt;\/div&gt;\n      &lt;!-- Circle --&gt;\n      &lt;div class=\&quot;w-56 h-56 bg-orange-500 rounded-circle position-absolute bottom-0 end-20 transform translate-y-1\/3\&quot;&gt;&lt;\/div&gt;\n    &lt;\/div&gt;\n    &lt;div class=\&quot;col-12 col-md-9 col-lg-7 offset-lg-5 border-left-lg min-h-lg-screen d-flex flex-column justify-content-center py-lg-16 px-lg-20 position-relative\&quot;&gt;\n      &lt;div class=\&quot;row\&quot;&gt;\n        &lt;div class=\&quot;col-lg-10 col-md-9 col-xl-6 mx-auto ms-xl-0\&quot;&gt;\n          &lt;div class=\&quot;mt-10 mt-lg-5 mb-6 d-flex align-items-center d-lg-block\&quot;&gt;\n            &lt;span class=\&quot;d-inline-block d-lg-block h1 mb-lg-6 me-3\&quot;&gt;\ud83d\udc4b&lt;\/span&gt;\n            &lt;h1 class=\&quot;ls-tight font-bolder h2\&quot;&gt;\n              Nice to see you!\n            &lt;\/h1&gt;\n          &lt;\/div&gt;\n          &lt;form&gt;\n            &lt;div class=\&quot;mb-5\&quot;&gt;\n              &lt;label class=\&quot;form-label\&quot; for=\&quot;email\&quot;&gt;Email address&lt;\/label&gt;\n              &lt;input type=\&quot;email\&quot; class=\&quot;form-control form-control-muted\&quot; id=\&quot;email\&quot;&gt;\n            &lt;\/div&gt;\n            &lt;div class=\&quot;mb-5\&quot;&gt;\n              &lt;label class=\&quot;form-label\&quot; for=\&quot;password\&quot;&gt;Password&lt;\/label&gt;\n              &lt;input type=\&quot;password\&quot; class=\&quot;form-control form-control-muted\&quot; id=\&quot;password\&quot; autocomplete=\&quot;current-password\&quot;&gt;\n            &lt;\/div&gt;\n            &lt;div class=\&quot;mb-5\&quot;&gt;\n              &lt;div class=\&quot;form-check\&quot;&gt;\n                &lt;input class=\&quot;form-check-input\&quot; type=\&quot;checkbox\&quot; name=\&quot;check_example\&quot; id=\&quot;check_example\&quot;&gt;\n                &lt;label class=\&quot;form-check-label\&quot; for=\&quot;check_example\&quot;&gt;\n                  Keep me logged in\n                &lt;\/label&gt;\n              &lt;\/div&gt;\n            &lt;\/div&gt;\n            &lt;div&gt;\n              &lt;a href=\&quot;#\&quot; class=\&quot;btn btn-primary w-full\&quot;&gt;\n                Sign in\n              &lt;\/a&gt;\n            &lt;\/div&gt;\n          &lt;\/form&gt;\n          &lt;div class=\&quot;py-5 text-center\&quot;&gt;\n            &lt;span class=\&quot;text-xs text-uppercase font-semibold\&quot;&gt;or&lt;\/span&gt;\n          &lt;\/div&gt;\n          &lt;div class=\&quot;row\&quot;&gt;\n            &lt;div class=\&quot;col-sm-6\&quot;&gt;\n              &lt;a href=\&quot;#\&quot; class=\&quot;btn btn-neutral w-full\&quot;&gt;\n                &lt;span class=\&quot;icon icon-sm pe-2\&quot;&gt;\n                  &lt;svg width=\&quot;24\&quot; height=\&quot;24\&quot; viewBox=\&quot;0 0 24 24\&quot; fill=\&quot;none\&quot; xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot;&gt;\n                    &lt;g clip-path=\&quot;url(#clip0)\&quot;&gt;\n                      &lt;path d=\&quot;M12 -3.05176e-05C5.3833 -3.05176e-05 0 5.38327 0 12C0 17.7383 3.94971 22.7802 9.3916 23.9883C9.53906 24.021 9.69434 23.9848 9.81299 23.8901C9.93115 23.7949 10 23.6518 10 23.5V20.5C10 20.2236 9.77637 20 9.5 20H8.5C7.31494 20 6.25684 18.5381 5.40625 17.3637C5.32227 17.2475 5.23926 17.1333 5.15723 17.0215C5.50635 17.185 5.84717 17.3559 6.13037 17.498C6.95068 17.9091 7.72559 18.2978 8.35938 18.4795C8.38721 18.4887 8.42139 18.5053 8.45947 18.5224C8.70361 18.6323 9.15723 18.8364 9.56396 18.5717C10 18.2895 10 17.6953 10 17.5V17.1513C10 16.9277 9.85156 16.7314 9.63623 16.6704C6.86328 15.8847 5 13.8071 5 11.5C5 10.3003 5.49268 9.15475 6.42529 8.18796C6.56885 8.03903 6.60596 7.81784 6.51904 7.63034C6.14697 6.82809 6.22559 5.73679 6.66748 5.08151C7.25098 5.30905 8.00781 5.7861 8.49951 6.37009C8.63477 6.53024 8.85693 6.5903 9.05371 6.51755C10.9287 5.83005 13.0713 5.83005 14.9463 6.51755C15.145 6.59128 15.3662 6.53073 15.5005 6.37009C15.9922 5.7861 16.749 5.30905 17.3325 5.08151C17.7744 5.73679 17.853 6.82809 17.481 7.63034C17.394 7.81784 17.4312 8.03903 17.5747 8.18796C18.5073 9.15475 19 10.3003 19 11.5C19 13.9218 16.9302 16.0908 13.9668 16.7739C13.8154 16.8091 13.689 16.9121 13.6245 17.0532C13.5601 17.1943 13.5645 17.3574 13.6372 17.4946C13.8848 17.9633 14 18.6006 14 19.5V23.5C14 23.6518 14.0688 23.7949 14.187 23.8901C14.2769 23.9619 14.3872 24 14.5 24C14.5361 24 14.5723 23.9961 14.6084 23.9883C20.0503 22.7802 24 17.7382 24 12C24 5.38327 18.6167 -3.05176e-05 12 -3.05176e-05Z\&quot; fill=\&quot;#303C42\&quot; \/&gt;\n                      &lt;path opacity=\&quot;0.2\&quot; d=\&quot;M9.63623 16.9203C9.85156 16.9814 10 17.1777 10 17.4013V17.1513C10 16.9277 9.85156 16.7314 9.63623 16.6703C6.91486 15.8993 5.08038 13.8823 5.0127 11.6267C5.01154 11.6682 5 11.7083 5 11.7499C5 14.0571 6.86328 16.1347 9.63623 16.9203Z\&quot; fill=\&quot;white\&quot; \/&gt;\n                      &lt;path opacity=\&quot;0.2\&quot; d=\&quot;M13.9668 17.0239C16.9302 16.3408 19 14.1718 19 11.7499C19 11.7072 18.9882 11.6659 18.9869 11.6232C18.9171 13.9944 16.8791 16.1025 13.9668 16.7739C13.8154 16.809 13.689 16.912 13.6245 17.0532C13.5763 17.1587 13.5794 17.2739 13.6081 17.3841C13.6153 17.3572 13.6128 17.3289 13.6245 17.3032C13.689 17.162 13.8154 17.059 13.9668 17.0239Z\&quot; fill=\&quot;white\&quot; \/&gt;\n                      &lt;path opacity=\&quot;0.2\&quot; d=\&quot;M12 -6.10352e-05C5.3833 -6.10352e-05 0 5.38324 0 11.9999C0 12.0455 0.0053101 12.09 0.0057983 12.1354C0.0681763 5.57184 5.42194 0.249939 12 0.249939C18.5781 0.249939 23.9318 5.57184 23.9942 12.1354C23.9947 12.09 24 12.0455 24 11.9999C24 5.38324 18.6167 -6.10352e-05 12 -6.10352e-05Z\&quot; fill=\&quot;white\&quot; \/&gt;\n                      &lt;path opacity=\&quot;0.1\&quot; d=\&quot;M9.3916 23.9883C9.53906 24.021 9.69434 23.9848 9.81299 23.8901C9.93115 23.7949 10 23.6518 10 23.5V23.25C10 23.4018 9.93115 23.5449 9.81299 23.6401C9.69434 23.7348 9.53906 23.771 9.3916 23.7383C3.99286 22.5398 0.0678101 17.567 0.0057983 11.8854C0.0054321 11.924 0 11.9613 0 12C0 17.7383 3.94971 22.7802 9.3916 23.9883Z\&quot; fill=\&quot;#010101\&quot; \/&gt;\n                      &lt;path opacity=\&quot;0.1\&quot; d=\&quot;M14.6084 23.7383C14.5723 23.7461 14.5361 23.75 14.5 23.75C14.3872 23.75 14.2769 23.7119 14.187 23.6401C14.0688 23.5449 14 23.4018 14 23.25V23.5C14 23.6518 14.0688 23.7949 14.187 23.8901C14.2769 23.9619 14.3872 24 14.5 24C14.5361 24 14.5723 23.9961 14.6084 23.9883C20.0503 22.7802 24 17.7383 24 12C24 11.9613 23.9946 11.924 23.9942 11.8854C23.9322 17.567 20.0071 22.5398 14.6084 23.7383Z\&quot; fill=\&quot;#010101\&quot; \/&gt;\n                      &lt;path opacity=\&quot;0.1\&quot; d=\&quot;M17.3325 4.83441C16.749 5.06195 15.9922 5.539 15.5005 6.12299C15.3662 6.28363 15.145 6.34418 14.9463 6.27045C13.0713 5.58295 10.9287 5.58295 9.05371 6.27045C8.85694 6.3432 8.63477 6.28314 8.49952 6.12299C8.00782 5.539 7.25098 5.06195 6.66748 4.83441C6.41523 5.2085 6.29718 5.72455 6.29798 6.24799C6.33338 5.8139 6.45588 5.39819 6.66748 5.08441C7.25098 5.31195 8.00782 5.789 8.49952 6.37299C8.63477 6.53314 8.85694 6.5932 9.05371 6.52045C10.9287 5.83295 13.0713 5.83295 14.9463 6.52045C15.145 6.59418 15.3662 6.53363 15.5005 6.37299C15.9922 5.789 16.749 5.31195 17.3325 5.08441C17.5441 5.39819 17.6666 5.8139 17.702 6.24799C17.7028 5.72455 17.5848 5.2085 17.3325 4.83441Z\&quot; fill=\&quot;#010101\&quot; \/&gt;\n                      &lt;path d=\&quot;M12 -3.05176e-05C5.3833 -3.05176e-05 0 5.38327 0 12C0 17.7383 3.94971 22.7802 9.3916 23.9883C9.53906 24.021 9.69434 23.9848 9.81299 23.8901C9.93115 23.7949 10 23.6518 10 23.5V20.5C10 20.2236 9.77637 20 9.5 20H8.5C7.31494 20 6.25684 18.5381 5.40625 17.3637C5.32227 17.2475 5.23926 17.1333 5.15723 17.0215C5.50635 17.185 5.84717 17.3559 6.13037 17.498C6.95068 17.9091 7.72559 18.2978 8.35938 18.4795C8.38721 18.4887 8.42139 18.5053 8.45947 18.5224C8.70361 18.6323 9.15723 18.8364 9.56396 18.5717C10 18.2895 10 17.6953 10 17.5V17.1513C10 16.9277 9.85156 16.7314 9.63623 16.6704C6.86328 15.8847 5 13.8071 5 11.5C5 10.3003 5.49268 9.15475 6.42529 8.18796C6.56885 8.03903 6.60596 7.81784 6.51904 7.63034C6.14697 6.82809 6.22559 5.73679 6.66748 5.08151C7.25098 5.30905 8.00781 5.7861 8.49951 6.37009C8.63477 6.53024 8.85693 6.5903 9.05371 6.51755C10.9287 5.83005 13.0713 5.83005 14.9463 6.51755C15.145 6.59128 15.3662 6.53073 15.5005 6.37009C15.9922 5.7861 16.749 5.30905 17.3325 5.08151C17.7744 5.73679 17.853 6.82809 17.481 7.63034C17.394 7.81784 17.4312 8.03903 17.5747 8.18796C18.5073 9.15475 19 10.3003 19 11.5C19 13.9218 16.9302 16.0908 13.9668 16.7739C13.8154 16.8091 13.689 16.9121 13.6245 17.0532C13.5601 17.1943 13.5645 17.3574 13.6372 17.4946C13.8848 17.9633 14 18.6006 14 19.5V23.5C14 23.6518 14.0688 23.7949 14.187 23.8901C14.2769 23.9619 14.3872 24 14.5 24C14.5361 24 14.5723 23.9961 14.6084 23.9883C20.0503 22.7802 24 17.7382 24 12C24 5.38327 18.6167 -3.05176e-05 12 -3.05176e-05Z\&quot; fill=\&quot;url(#paint0_linear)\&quot; \/&gt;\n                    &lt;\/g&gt;\n                    &lt;defs&gt;\n                      &lt;linearGradient id=\&quot;paint0_linear\&quot; x1=\&quot;1.07434\&quot; y1=\&quot;7.03731\&quot; x2=\&quot;22.8646\&quot; y2=\&quot;17.1983\&quot; gradientUnits=\&quot;userSpaceOnUse\&quot;&gt;\n                        &lt;stop stop-color=\&quot;white\&quot; stop-opacity=\&quot;0.2\&quot; \/&gt;\n                        &lt;stop offset=\&quot;1\&quot; stop-color=\&quot;white\&quot; stop-opacity=\&quot;0\&quot; \/&gt;\n                      &lt;\/linearGradient&gt;\n                      &lt;clipPath id=\&quot;clip0\&quot;&gt;\n                        &lt;rect width=\&quot;24\&quot; height=\&quot;24\&quot; fill=\&quot;white\&quot; \/&gt;\n                      &lt;\/clipPath&gt;\n                    &lt;\/defs&gt;\n                  &lt;\/svg&gt;\n                &lt;\/span&gt;\n                Github\n              &lt;\/a&gt;\n            &lt;\/div&gt;\n            &lt;div class=\&quot;col-sm-6\&quot;&gt;\n              &lt;a href=\&quot;#\&quot; class=\&quot;btn btn-neutral w-full\&quot;&gt;\n                &lt;span class=\&quot;icon icon-sm pe-2\&quot;&gt;\n                  &lt;svg width=\&quot;24\&quot; height=\&quot;24\&quot; viewBox=\&quot;0 0 24 24\&quot; fill=\&quot;none\&quot; xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot;&gt;\n                    &lt;path d=\&quot;M12 5C13.6168 5 15.1013 5.55353 16.2863 6.47406L19.9235 3.00409C17.8088 1.13995 15.0406 0 12 0C7.3924 0 3.39667 2.59991 1.3858 6.40985L5.43024 9.60278C6.40997 6.91937 8.97748 5 12 5Z\&quot; fill=\&quot;#F44336\&quot; \/&gt;\n                    &lt;path d=\&quot;M23.8961 13.5018C23.9586 13.0102 24 12.5087 24 12C24 11.1422 23.9063 10.3068 23.7352 9.5H12V14.5H18.4862C17.9615 15.8638 17.0272 17.0178 15.838 17.8195L19.8975 21.0243C22.0494 19.1354 23.522 16.4904 23.8961 13.5018Z\&quot; fill=\&quot;#2196F3\&quot; \/&gt;\n                    &lt;path d=\&quot;M5 12C5 11.1566 5.15686 10.3516 5.43024 9.60278L1.3858 6.40985C0.504333 8.08002 0 9.98016 0 12C0 13.9973 0.495056 15.8763 1.35822 17.533L5.40778 14.3359C5.14844 13.6044 5 12.8204 5 12Z\&quot; fill=\&quot;#FFC107\&quot; \/&gt;\n                    &lt;path d=\&quot;M12 19C8.95447 19 6.37042 17.0515 5.40778 14.3359L1.35822 17.533C3.35925 21.3735 7.36981 24 12 24C15.0278 24 17.7888 22.8752 19.8975 21.0243L15.838 17.8195C14.7412 18.5589 13.4284 19 12 19Z\&quot; fill=\&quot;#00B060\&quot; \/&gt;\n                    &lt;path opacity=\&quot;0.1\&quot; d=\&quot;M12 23.75C8.46832 23.75 5.29272 22.2928 3.04755 19.9713C5.24536 22.4378 8.43646 24 12 24C15.5306 24 18.6953 22.4686 20.8881 20.0408C18.6496 22.3246 15.4981 23.75 12 23.75Z\&quot; fill=\&quot;black\&quot; \/&gt;\n                    &lt;path opacity=\&quot;0.1\&quot; d=\&quot;M12 14.25V14.5H18.4862L18.5875 14.25H12Z\&quot; fill=\&quot;black\&quot; \/&gt;\n                    &lt;path d=\&quot;M23.9944 12.147C23.9952 12.0978 24 12.0494 24 12C24 11.986 23.9978 11.9725 23.9977 11.9586C23.9971 12.0215 23.9939 12.0838 23.9944 12.147Z\&quot; fill=\&quot;#E6E6E6\&quot; \/&gt;\n                    &lt;path opacity=\&quot;0.2\&quot; d=\&quot;M12 9.5V9.75H23.7856C23.7698 9.66748 23.7526 9.58191 23.7352 9.5H12Z\&quot; fill=\&quot;white\&quot; \/&gt;\n                    &lt;path d=\&quot;M23.7352 9.5H12V14.5H18.4862C17.4775 17.1216 14.9772 19 12 19C8.13403 19 5 15.866 5 12C5 8.13397 8.13403 5 12 5C13.4019 5 14.6939 5.43066 15.7885 6.14069C15.9561 6.24957 16.1289 6.35181 16.2863 6.47406L19.9235 3.00409L19.8414 2.94098C17.7369 1.11707 15.0035 0 12 0C5.37256 0 0 5.37256 0 12C0 18.6274 5.37256 24 12 24C18.1177 24 23.1555 19.4188 23.8961 13.5018C23.9586 13.0102 24 12.5087 24 12C24 11.1422 23.9063 10.3068 23.7352 9.5Z\&quot; fill=\&quot;url(#paint0_linear)\&quot; \/&gt;\n                    &lt;path opacity=\&quot;0.1\&quot; d=\&quot;M15.7885 5.89069C14.6939 5.18066 13.4019 4.75 12 4.75C8.13403 4.75 5 7.88397 5 11.75C5 11.7922 5.00057 11.8251 5.0013 11.8672C5.06874 8.05951 8.17621 5 12 5C13.4019 5 14.6939 5.43066 15.7885 6.14069C15.9561 6.24957 16.1289 6.35181 16.2863 6.47406L19.9235 3.00409L16.2863 6.22406C16.1289 6.10181 15.9561 5.99957 15.7885 5.89069Z\&quot; fill=\&quot;black\&quot; \/&gt;\n                    &lt;path opacity=\&quot;0.2\&quot; d=\&quot;M12 0.25C14.975 0.25 17.6829 1.34839 19.7793 3.1416L19.9235 3.00409L19.8134 2.90827C17.709 1.08436 15.0035 0 12 0C5.37256 0 0 5.37256 0 12C0 12.0422 0.0058594 12.0829 0.0062866 12.125C0.0740356 5.55585 5.41473 0.25 12 0.25Z\&quot; fill=\&quot;white\&quot; \/&gt;\n                    &lt;defs&gt;\n                      &lt;linearGradient id=\&quot;paint0_linear\&quot; x1=\&quot;0\&quot; y1=\&quot;12\&quot; x2=\&quot;24\&quot; y2=\&quot;12\&quot; gradientUnits=\&quot;userSpaceOnUse\&quot;&gt;\n                        &lt;stop stop-color=\&quot;white\&quot; stop-opacity=\&quot;0.2\&quot; \/&gt;\n                        &lt;stop offset=\&quot;1\&quot; stop-color=\&quot;white\&quot; stop-opacity=\&quot;0\&quot; \/&gt;\n                      &lt;\/linearGradient&gt;\n                    &lt;\/defs&gt;\n                  &lt;\/svg&gt;\n                &lt;\/span&gt;\n                Google\n              &lt;\/a&gt;\n            &lt;\/div&gt;\n          &lt;\/div&gt;\n          &lt;div class=\&quot;my-6\&quot;&gt;\n            &lt;small&gt;Don&#039;t have an account?&lt;\/small&gt;\n            &lt;a href=\&quot;#\&quot; class=\&quot;text-warning text-sm font-semibold\&quot;&gt;Sign up&lt;\/a&gt;\n          &lt;\/div&gt;\n        &lt;\/div&gt;\n      &lt;\/div&gt;\n    &lt;\/div&gt;\n  &lt;\/div&gt;\n&lt;\/div&gt;&quot;,&quot;editor&quot;:null},&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;4dc90c510ccfc96a92553ff2d5021ede21025afe2d357497feb0c1ec110caada&quot;}}" class="ratio ratio-16x9 h-full overflow-auto">
+  <div class="w-full h-full overflow-auto p-5 bg-dark">
+    <div wire:init="setEditorCode" id="editor-code" class="h-full"></div>
+  </div>
+</div>
+
+<!-- Livewire Component wire-end:aJBaS4VcIsGZxZVqiFFF -->			</div>
+					</div>
+	</div>
+		</div>
+
+<!-- Livewire Component wire-end:2BnGNwTaguQlUeA04HcL -->  </div>
+				</div>
+			</main>
+
+			
+		</div>
+
+		<!-- Cookie consent -->
+		<div class="w-72 position-fixed bottom-4 start-4 overlap-1000 rounded-3 bg-dark text-white shadow-soft-5 js-cookie-consent cookie-consent ">
+  <div class="d-flex flex-column gap-4 p-6">
+    <div class="w-16 svg-fluid">
+      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><g id="flat"><path d="M59,28a8,8,0,0,1-7.948-7.111,7.982,7.982,0,0,1-11.761-9A7.955,7.955,0,0,1,38,12a8,8,0,0,1-8-8,8.126,8.126,0,0,1,.058-.928A29,29,0,1,0,60.7,27.816,8.024,8.024,0,0,1,59,28Z" style="fill:#a65c2e"/><path d="M60.7,27.816a7.987,7.987,0,0,1-9.643-6.927,7.974,7.974,0,0,1-3.088,1.045A33.5,33.5,0,0,1,14.5,54c-.478,0-.952-.016-1.424-.036A28.99,28.99,0,0,0,60.7,27.816Z" style="fill:#964c1e"/><circle cx="29" cy="28" r="4" style="fill:#663318"/><circle cx="22" cy="48" r="4" style="fill:#663318"/><circle cx="44" cy="48" r="4" style="fill:#663318"/><circle cx="13" cy="32" r="2" style="fill:#854219"/><circle cx="37" cy="42" r="2" style="fill:#854219"/><circle cx="48" cy="30" r="2" style="fill:#854219"/><path d="M18.584,13.315l-1.168-1.623a25.056,25.056,0,0,1,3.125-1.917l.918,1.778A22.979,22.979,0,0,0,18.584,13.315Z" style="fill:#c47747"/><path d="M9.994,25.291,8.08,24.709a25,25,0,0,1,7.253-11.343l1.334,1.49A23,23,0,0,0,9.994,25.291Z" style="fill:#c47747"/></g></svg>
+    </div>
+    <span class="text-sm font-semibold cookie-consent__message">
+        Votre expérience sur ce site sera améliorée en autorisant les cookies.
+    </span>
+    <button class="btn btn-sm btn-white js-cookie-consent-agree cookie-consent__agree">
+        Autorisez les cookies
+    </button>
+  </div>
+</div>
+
+    <script>
+
+        window.laravelCookieConsent = (function () {
+
+            const COOKIE_VALUE = 1;
+            const COOKIE_DOMAIN = '.taddart.io';
+
+            function consentWithCookies() {
+                setCookie('taddart_cookie_consent', COOKIE_VALUE, 7300);
+                hideCookieDialog();
+            }
+
+            function cookieExists(name) {
+                return (document.cookie.split('; ').indexOf(name + '=' + COOKIE_VALUE) !== -1);
+            }
+
+            function hideCookieDialog() {
+                const dialogs = document.getElementsByClassName('js-cookie-consent');
+
+                for (let i = 0; i < dialogs.length; ++i) {
+                    dialogs[i].style.display = 'none';
+                }
+            }
+
+            function setCookie(name, value, expirationInDays) {
+                const date = new Date();
+                date.setTime(date.getTime() + (expirationInDays * 24 * 60 * 60 * 1000));
+                document.cookie = name + '=' + value
+                    + ';expires=' + date.toUTCString()
+                    + ';domain=' + COOKIE_DOMAIN
+                    + ';path=/'
+                    + ';samesite=lax';
+            }
+
+            if (cookieExists('taddart_cookie_consent')) {
+                hideCookieDialog();
+            }
+
+            const buttons = document.getElementsByClassName('js-cookie-consent-agree');
+
+            for (let i = 0; i < buttons.length; ++i) {
+                buttons[i].addEventListener('click', consentWithCookies);
+            }
+
+            return {
+                consentWithCookies: consentWithCookies,
+                hideCookieDialog: hideCookieDialog
+            };
+        })();
+    </script>
+
+
+		<!-- Noscripts -->
+		<!-- GTM (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MF4DZVH" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  
+		<!-- Scripts -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="../../js/app-id=68c2722b1fbead28f770.js" defer></script>
+<script src="../../livewire/livewire-id=c69d0f2801c01fcf8166.js" data-turbo-eval="false" data-turbolinks-eval="false" ></script><script data-turbo-eval="false" data-turbolinks-eval="false" >window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = '1n5YvA0wF811n9eect9ly5OEfmB56JvyzVakJlnb';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
+	</body>
+
+</html>

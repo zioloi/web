@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html lang="en" class="antialiased">
+
+	<head>
+
+		<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="csrf-token" content="1n5YvA0wF811n9eect9ly5OEfmB56JvyzVakJlnb">
+<meta name="author" content="taddart">
+<meta property="fb:app_id" content="959738874378368" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@webpxs" />
+<meta name="twitter:title" content="Colors" />
+<meta name="twitter:description" content="taddart CSS includes an extensive color system that themes our styles and components. This enables more comprehensive customization and extension for any project." />
+<meta name="twitter:creator" content="@webpxs" />
+
+<meta property="og:url" content="https://taddart.io/docs/css/v1/colors" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Colors" />
+<meta property="og:description" content="taddart CSS includes an extensive color system that themes our styles and components. This enables more comprehensive customization and extension for any project." />
+
+<meta property="description" content="taddart CSS includes an extensive color system that themes our styles and components. This enables more comprehensive customization and extension for any project." />
+
+
+
+<meta name="url" content="https://taddart.io/docs/css/v1/colors" />
+<meta property="og:url" content="https://taddart.io/docs/css/v1/colors" />
+
+
+<link rel="image_src" href="../../../img/og/taddart.jpg" />
+<meta name="image" content="https://taddart.io/img/og/taddart.jpg" />
+<meta property="og:image" content="https://taddart.io/img/og/taddart.jpg" />
+<meta name="twitter:image" content="https://taddart.io/img/og/taddart.jpg" />
+
+<title>Colors - taddart</title>
+		<!-- Styles -->
+<link rel="stylesheet" type="text/css" href="../../../css/main-id=88bd2dedef769c4dd7ad.css">
+<link rel="stylesheet" type="text/css" href="../../../css/utilities-id=0ba008666fa7d704fbab.css">
+<link rel="stylesheet" type="text/css" href="../../../css/demo-id=969ff5d825cdc67640f6.css">
+
+<!-- Favicon -->
+<link href="../../../img/brand/favicon.png" rel="icon" type="image/png">
+<link href="../../../img/brand/apple-touch.png" rel="apple-touch-icon-precomposed" />
+
+<!-- Vendor -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
+<link rel="stylesheet" href="../../../vendor/icons/css/all.css">
+<link rel="stylesheet" href="../../../vendor/monaco-editor/theme.css">
+<style >[wire\:loading], [wire\:loading\.delay], [wire\:loading\.inline-block], [wire\:loading\.inline], [wire\:loading\.block], [wire\:loading\.flex], [wire\:loading\.table], [wire\:loading\.grid], [wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short], [wire\:loading\.delay\.long], [wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest] {display:none;}[wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}input:-webkit-autofill, select:-webkit-autofill, textarea:-webkit-autofill {animation-duration: 50000s;animation-name: livewireautofill;}@keyframes livewireautofill { from {} }</style>
+		<!-- Plausible -->
+  <script defer data-domain="taddart.io" src="https://plausible.io/js/plausible.js"></script>
+  <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+  <!-- GTM -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MF4DZVH');</script>
+  
+	</head>
+
+	<body class="font-sans">
+
+		
+		<!-- Notifications -->
+				<div wire:id="Wc7THCtqqOxyeziu2Fuu" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;Wc7THCtqqOxyeziu2Fuu&quot;,&quot;name&quot;:&quot;notification&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;docs\/css\/v1\/colors&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[&quot;success&quot;,&quot;warning&quot;,&quot;danger&quot;,&quot;info&quot;]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;832c06c1&quot;,&quot;data&quot;:{&quot;message&quot;:null,&quot;type&quot;:null,&quot;show&quot;:false},&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;399f67437299342725011cde8e07333c0fdc22e0b6b872a66b8f0d742bffb9ec&quot;}}">
+	</div>
+
+<!-- Livewire Component wire-end:Wc7THCtqqOxyeziu2Fuu -->
+		<!-- Feedback modal -->
+		<div class="modal fade " id="modalFeedback" "tabindex"="-1" "aria-hidden"="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content overflow-hidden shadow-6 rounded-4">
+			
+			<div class="modal-body ">
+				<div class="d-flex justify-content-between align-items-center mb-5">
+			<h5>Share your feedback</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<form wire:id="LDyyDOmWXDKyZvPXnh1d" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;LDyyDOmWXDKyZvPXnh1d&quot;,&quot;name&quot;:&quot;feedback.get-feedback&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;docs\/css\/v1\/colors&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;48f82fe8&quot;,&quot;data&quot;:{&quot;title&quot;:null,&quot;text&quot;:null,&quot;rating&quot;:null},&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;d8bd096d9c1b55aace09988c7cfa420c4d94440a8f4af1fdb3778f60ca9ca3c7&quot;}}" wire:submit.prevent="save">
+	<input type="hidden" name="_token" value="1n5YvA0wF811n9eect9ly5OEfmB56JvyzVakJlnb">	<div class="mb-5">
+		<input wire:model="title" type="text" class="form-control " name="title" placeholder="Title" />
+			</div>
+	<div class="mb-5">
+		<textarea wire:model="text" rows="4" class="form-control " name="text" data-toggle="autosize" placeholder="Your feedback"></textarea>
+			</div>
+	<div class="d-flex justify-content-between">
+		<div class="hstack gap-2">
+			<input wire:model="rating" type="radio" name="rating-options" class="btn-check" id="rating5" value="5" />
+			<label class="btn btn-sm btn-neutral btn-square text-lg rounded-circle" for="rating5">😍</label>
+			<input wire:model="rating" type="radio" name="rating-options" class="btn-check" id="rating4" value="4" />
+			<label class="btn btn-sm btn-neutral btn-square text-lg rounded-circle" for="rating4">😀</label>
+			<input wire:model="rating" type="radio" name="rating-options" class="btn-check" id="rating3" value="3" />
+			<label class="btn btn-sm btn-neutral btn-square text-lg rounded-circle" for="rating3">😕</label>
+			<input wire:model="rating" type="radio" name="rating-options" class="btn-check" id="rating2" value="2" />
+			<label class="btn btn-sm btn-neutral btn-square text-lg rounded-circle" for="rating2">😓</label>
+		</div>
+		<button type="submit" class="btn btn-sm btn-dark">Send</button>
+	</div>
+</form>
+
+<!-- Livewire Component wire-end:LDyyDOmWXDKyZvPXnh1d -->
+			</div>
+
+					</div>
+	</div>
+</div>
+
+		<!-- App container -->
+		<div id="app" class="d-flex flex-column min-h-screen">
+
+			
+			
+			<main class="d-flex flex-grow-1">
+				<div class="w-full">
+					<div class="container-fluid pe-lg-0">
+		<div class="d-lg-flex">
+			<div class="w-full w-lg-72 flex-none d-lg-block b-surface-secondary collapse" id="docsSidenavCollapse">
+				<div class="position-lg-sticky top-lg-0">
+					<div class="overflow-y-auto border-end-lg pe-7 h-lg-calc" style="--w-h-lg: 0;">
+						<div class="d-lg-block py-3">
+							<div class="vstack gap-8">
+  <!-- Logo -->
+  <a class="navbar-brand d-flex align-items-center gap-3" href="installation.html">
+    <div class="w-md-auto  text-dark">
+  <svg class="w-auto h-8" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 500C0 223.858 223.858 0 500 0C776.142 0 1000 223.858 1000 500C1000 776.142 776.142 1000 500 1000C223.858 1000 0 776.142 0 500Z" fill="currentColor"/>
+    <path d="M200.586 392.877C181.963 360.623 193.015 319.379 225.269 300.757C257.524 282.135 298.767 293.186 317.39 325.44L494.411 632.051C513.033 664.305 501.982 705.549 469.728 724.171C437.473 742.793 396.229 731.742 377.607 699.488L200.586 392.877Z" fill="white"/>
+    <path d="M453.948 392.877C435.326 360.623 446.377 319.379 478.631 300.757C510.886 282.135 552.129 293.186 570.752 325.44L747.773 632.051C766.395 664.305 755.344 705.549 723.09 724.171C690.835 742.793 649.591 731.742 630.969 699.488L453.948 392.877Z" fill="white"/>
+    <path d="M673.592 334.475C673.592 297.231 703.784 267.039 741.029 267.039C778.273 267.039 808.465 297.231 808.465 334.475C808.465 371.72 778.273 401.912 741.029 401.912C703.784 401.912 673.592 371.72 673.592 334.475Z" fill="white"/>
+  </svg>
+</div>
+    <span class="text-heading font-bold ls-tight">taddart Docs</span>
+  </a>
+  <!-- Shortcuts -->
+	<div class="vstack gap-3">
+		<div class="d-flex align-items-center">
+			<div>
+				<div class="icon icon-shape w-7 h-7 border text-xs rounded text-transparent bg-clip-text gradient-bottom-right start-blue-500 end-cyan-500">
+					<i class="far fa-books"></i>
+				</div>
+			</div>
+			<div class="ps-3">
+				<a href="https://taddart.io/docs/css" class="d-block text-sm text-heading font-semibold mb-0">Data Warehousing</a>
+			</div>
+		</div>
+		<div class="d-flex align-items-center">
+			<div>
+				<div class="icon icon-shape w-7 h-7 border text-xs rounded text-transparent bg-clip-text gradient-bottom-right start-pink-500 end-purple-400">
+					<i class="far fa-clone"></i>
+				</div>
+			</div>
+			<div class="ps-3">
+				<a href="../../../components.html" class="d-block text-sm text-muted text-heading-hover font-semibold mb-0">Components</a>
+			</div>
+		</div>
+		<div class="d-flex align-items-center">
+			<div>
+				<div class="icon icon-shape w-7 h-7 border text-xs rounded text-transparent bg-clip-text gradient-bottom-right start-purple-500 end-cyan-500">
+					<i class="far fa-columns"></i>
+				</div>
+			</div>
+			<div class="ps-3">
+				<a href="../../../Data Discovery.html" class="d-block text-sm text-muted text-heading-hover font-semibold mb-0">Data Discovery</a>
+			</div>
+		</div>
+    	</div>
+  <div>
+      	<div class="d-flex align-items-center text-xs text-heading font-bold ls-wider text-uppercase mb-2" data-bs-toggle="collapse" href="#collapse-getting-started" role="button" aria-expanded="true" aria-controls="collapse-getting-started">
+  		<div>
+  			Getting started
+  		</div>
+  		<div class="ms-auto text-muted">
+  			<i class="far fa-angle-down"></i>
+  		</div>
+  	</div>
+  	  	<div class="collapse show mt-5" id="collapse-getting-started">
+  		<ul class="nav flex-column gap-3">
+  			  			  			<li class="nav-item">
+  				<a href="welcome.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Welcome
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="installation.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Installation
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="quick-start.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Quick Start
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="build-tools.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Build Tools
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="optimize.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Optimize
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="browser-support.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Browser Support
+            </span>
+  				</a>
+  			</li>
+  			  			  		</ul>
+  	</div>
+  	  	  	<div class="d-flex align-items-center text-xs text-heading font-bold ls-wider text-uppercase mb-2 mt-8" data-bs-toggle="collapse" href="#collapse-foundation" role="button" aria-expanded="true" aria-controls="collapse-foundation">
+  		<div>
+  			Foundation
+  		</div>
+  		<div class="ms-auto text-muted">
+  			<i class="far fa-angle-down"></i>
+  		</div>
+  	</div>
+  	  	<div class="collapse show mt-5" id="collapse-foundation">
+  		<ul class="nav flex-column gap-3">
+  			  			  			<li class="nav-item">
+  				<a href="theme.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Themes
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="breakpoints.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Breakpoints
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="functions.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Functions
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="utilities.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Utilities
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="colors.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded bg-primary bg-opacity-10 text-primary font-bold">
+              Colors
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="typography.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Typography
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="spacing.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Spacing
+            </span>
+  				</a>
+  			</li>
+  			  			  		</ul>
+  	</div>
+  	  	  	<div class="d-flex align-items-center text-xs text-heading font-bold ls-wider text-uppercase mb-2 mt-8" data-bs-toggle="collapse" href="#collapse-layout" role="button" aria-expanded="true" aria-controls="collapse-layout">
+  		<div>
+  			Layout
+  		</div>
+  		<div class="ms-auto text-muted">
+  			<i class="far fa-angle-down"></i>
+  		</div>
+  	</div>
+  	  	<div class="collapse show mt-5" id="collapse-layout">
+  		<ul class="nav flex-column gap-3">
+  			  			  			<li class="nav-item">
+  				<a href="containers.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Containers
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="grid.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Grid
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="columns.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Columns
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="gutters.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Gutters
+            </span>
+  				</a>
+  			</li>
+  			  			  		</ul>
+  	</div>
+  	  	  	<div class="d-flex align-items-center text-xs text-heading font-bold ls-wider text-uppercase mb-2 mt-8" data-bs-toggle="collapse" href="#collapse-utilities" role="button" aria-expanded="true" aria-controls="collapse-utilities">
+  		<div>
+  			Utilities
+  		</div>
+  		<div class="ms-auto text-muted">
+  			<i class="far fa-angle-down"></i>
+  		</div>
+  	</div>
+  	  	<div class="collapse show mt-5" id="collapse-utilities">
+  		<ul class="nav flex-column gap-3">
+  			  			  			<li class="nav-item">
+  				<a href="backgrounds.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Backgrounds
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="borders.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Borders
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="display.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Display
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="flex.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Flex
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="float.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Floats
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="interactions.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Interactions
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="opacity.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Opacity
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="overflow.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Overflow
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="position.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Position
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="shadow.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Shadow
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="width.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Sizing
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="spacing.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Spacing
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			  			  			<li class="nav-item">
+  				<a href="transform.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Transforms
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="transition-property.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Transition
+            </span>
+  				</a>
+  			</li>
+  			  			  		</ul>
+  	</div>
+  	  	  </div>
+</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="min-w-0 w-full flex-fill max-h-full overflow-visible">
+				<div class="navbar navbar-light bg-white border-bottom px-0 py-4 mx-lg-20" id="topbar">
+			    <div class="container-fluid px-0">
+						<!-- Docsearch -->
+						<div class="form-inline w-sm-80 me-3">
+							<div id="docsearch"></div>
+						</div>
+						<!-- Breadcrumbs -->
+						<nav aria-label="breadcrumb" class="d-sm-block ms-sm-auto">
+							<ol class="breadcrumb">
+									<li class="breadcrumb-item">
+										<a href="installation.html" class="text-muted">Docs</a>
+									</li>
+									<li class="breadcrumb-item">
+										<a href="installation.html" class="text-muted">taddart CSS</a>
+									</li>
+									<li class="breadcrumb-item dropdown" aria-current="page">
+										<a href="colors.html#" class="text-heading font-bold">
+											v1.x
+										</a>
+									</li>
+							</ol>
+						</nav>
+			    </div>
+				</div>
+				<div class="d-flex w-full">
+					<div class="min-w-0 flex-1 px-lg-20 py-10">
+						<article class="article">
+							<h1 class="ls-tight font-bolder mb-1">Colors</h1>
+
+														<p class="mt-3 mb-5">
+								taddart CSS includes an extensive color system that themes our styles and components. This enables more comprehensive customization and extension for any project.
+							</p>
+							
+														<hr class="mt-4 my-lg-10 mb-0">
+							
+														<!-- Markdown -->
+							<ul class="table-of-contents">
+<li>
+<p><a href="colors.html#overview">Overview</a></p>
+</li>
+<li>
+<p><a href="colors.html#color-palette">Color palette</a></p>
+<ul>
+<li>
+<p><a href="colors.html#available-colors">Available colors</a></p>
+</li>
+<li>
+<p><a href="colors.html#changing-default-values">Changing default values</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="colors.html#theme-colors">Theme colors</a></p>
+<ul>
+<li>
+<p><a href="colors.html#available-theme-colors">Available theme colors</a></p>
+</li>
+<li>
+<p><a href="colors.html#changing-theme-colors">Changing theme colors</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="colors.html#gray-colors">Gray colors</a></p>
+<ul>
+<li>
+<p><a href="colors.html#available-gray-colors">Available gray colors</a></p>
+</li>
+<li>
+<p><a href="colors.html#how-to-use-gray-colors">How to use gray colors</a></p>
+</li>
+<li>
+<p><a href="colors.html#changing-gray-colors">Changing gray colors</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="colors.html#using-colors">Using colors</a></p>
+</li>
+</ul>
+<h2><a id="user-content-overview" href="colors.html#overview" name="overview" class="heading-permalink" aria-hidden="true" title="">¶</a>Overview</h2>
+<p>The source Sass files include three maps to help you quickly and easily loop over a list of colors and their hex values.</p>
+<ul>
+<li>
+<code>$colors</code> lists all our available colors</li>
+<li>
+<code>$theme-colors</code> lists all semantically named theme colors (shown below)</li>
+<li>
+<code>$grays</code> lists all tints and shades of gray</li>
+</ul>
+<hr />
+<h2><a id="user-content-color-palette" href="colors.html#color-palette" name="color-palette" class="heading-permalink" aria-hidden="true" title="">¶</a>Color palette</h2>
+<p>All the colors are available as Sass variables and a Sass map in the variables file. We use them to create a subset of these colors for a theme palette for easier usage. It
+allows you to remain consistent.</p>
+<h3><a id="user-content-available-colors" href="colors.html#available-colors" name="available-colors" class="heading-permalink" aria-hidden="true" title="">¶</a>Available colors</h3>
+<p>We manually created variables for every tint and shade ourselves. We specify the midpoint value (e.g., <code>$indigo-500</code>) and use custom color functions to tint (lighten) or shade (darken) our colors via Sass’s mix() color function.</p>
+<!--  Blue -->
+<div class="d-flex align-items-center mb-6">
+    <div class="w-32 flex-shrink-0">
+        <h6>Blue</h6>
+    </div>
+    <div class="min-w-0 flex-fill row g-3">
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-blue-100"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">100</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-blue-200"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">200</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-blue-300"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">300</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-blue-400"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">400</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-blue-500"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">500</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-blue-600"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">600</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-blue-700"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">700</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-blue-800"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">800</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-blue-900"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">900</span>
+        </div>
+    </div>
+</div>
+<!--  Indigo -->
+<div class="d-flex align-items-center mb-6">
+    <div class="w-32 flex-shrink-0">
+        <h6>Indigo</h6>
+    </div>
+    <div class="min-w-0 flex-fill row g-3">
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-indigo-100"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">100</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-indigo-200"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">200</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-indigo-300"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">300</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-indigo-400"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">400</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-indigo-500"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">500</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-indigo-600"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">600</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-indigo-700"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">700</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-indigo-800"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">800</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-indigo-900"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">900</span>
+        </div>
+    </div>
+</div>
+<!--  Purple -->
+<div class="d-flex align-items-center mb-6">
+    <div class="w-32 flex-shrink-0">
+        <h6>Purple</h6>
+    </div>
+    <div class="min-w-0 flex-fill row g-3">
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-purple-100"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">100</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-purple-200"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">200</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-purple-300"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">300</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-purple-400"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">400</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-purple-500"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">500</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-purple-600"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">600</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-purple-700"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">700</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-purple-800"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">800</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-purple-900"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">900</span>
+        </div>
+    </div>
+</div>
+<!--  Pink -->
+<div class="d-flex align-items-center mb-6">
+    <div class="w-32 flex-shrink-0">
+        <h6>Pink</h6>
+    </div>
+    <div class="min-w-0 flex-fill row g-3">
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-pink-100"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">100</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-pink-200"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">200</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-pink-300"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">300</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-pink-400"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">400</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-pink-500"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">500</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-pink-600"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">600</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-pink-700"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">700</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-pink-800"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">800</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-pink-900"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">900</span>
+        </div>
+    </div>
+</div>
+<!-- Magenta -->
+<div class="d-flex align-items-center mb-6">
+    <div class="w-32 flex-shrink-0">
+        <h6>Pink</h6>
+    </div>
+    <div class="min-w-0 flex-fill row g-3">
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-magenta-100"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">100</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-magenta-200"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">200</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-magenta-300"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">300</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-magenta-400"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">400</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-magenta-500"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">500</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-magenta-600"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">600</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-magenta-700"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">700</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-magenta-800"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">800</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-magenta-900"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">900</span>
+        </div>
+    </div>
+</div>
+<!--  Red -->
+<div class="d-flex align-items-center mb-6">
+    <div class="w-32 flex-shrink-0">
+        <h6>Red</h6>
+    </div>
+    <div class="min-w-0 flex-fill row g-3">
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-red-100"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">100</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-red-200"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">200</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-red-300"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">300</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-red-400"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">400</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-red-500"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">500</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-red-600"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">600</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-red-700"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">700</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-red-800"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">800</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-red-900"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">900</span>
+        </div>
+    </div>
+</div>
+<!--  Orange -->
+<div class="d-flex align-items-center mb-6">
+    <div class="w-32 flex-shrink-0">
+        <h6>Orange</h6>
+    </div>
+    <div class="min-w-0 flex-fill row g-3">
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-orange-100"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">100</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-orange-200"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">200</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-orange-300"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">300</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-orange-400"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">400</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-orange-500"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">500</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-orange-600"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">600</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-orange-700"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">700</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-orange-800"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">800</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-orange-900"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">900</span>
+        </div>
+    </div>
+</div>
+<!--  Yellow -->
+<div class="d-flex align-items-center mb-6">
+    <div class="w-32 flex-shrink-0">
+        <h6>Yellow</h6>
+    </div>
+    <div class="min-w-0 flex-fill row g-3">
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-yellow-100"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">100</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-yellow-200"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">200</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-yellow-300"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">300</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-yellow-400"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">400</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-yellow-500"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">500</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-yellow-600"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">600</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-yellow-700"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">700</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-yellow-800"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">800</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-yellow-900"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">900</span>
+        </div>
+    </div>
+</div>
+<!--  Green -->
+<div class="d-flex align-items-center mb-6">
+    <div class="w-32 flex-shrink-0">
+        <h6>Green</h6>
+    </div>
+    <div class="min-w-0 flex-fill row g-3">
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-green-100"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">100</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-green-200"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">200</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-green-300"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">300</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-green-400"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">400</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-green-500"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">500</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-green-600"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">600</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-green-700"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">700</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-green-800"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">800</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-green-900"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">900</span>
+        </div>
+    </div>
+</div>
+<!--  Teal -->
+<div class="d-flex align-items-center mb-6">
+    <div class="w-32 flex-shrink-0">
+        <h6>Teal</h6>
+    </div>
+    <div class="min-w-0 flex-fill row g-3">
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-teal-100"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">100</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-teal-200"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">200</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-teal-300"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">300</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-teal-400"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">400</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-teal-500"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">500</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-teal-600"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">600</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-teal-700"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">700</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-teal-800"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">800</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-teal-900"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">900</span>
+        </div>
+    </div>
+</div>
+<!--  Cyan -->
+<div class="d-flex align-items-center mb-6">
+    <div class="w-32 flex-shrink-0">
+        <h6>Cyan</h6>
+    </div>
+    <div class="min-w-0 flex-fill row g-3">
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-cyan-100"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">100</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-cyan-200"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">200</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-cyan-300"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">300</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-cyan-400"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">400</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-cyan-500"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">500</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-cyan-600"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">600</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-cyan-700"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">700</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-cyan-800"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">800</span>
+        </div>
+        <div class="col">
+            <div class="h-10 w-10 rounded-2 bg-cyan-900"></div>
+            <span class="d-block mt-1 text-xs font-bold text-heading">900</span>
+        </div>
+    </div>
+</div>
+<hr />
+<h3><a id="user-content-changing-default-values" href="colors.html#changing-default-values" name="changing-default-values" class="heading-permalink" aria-hidden="true" title="">¶</a>Changing default values</h3>
+<p>When you do need to customize your palette, you can configure your base colors which will automatically create a complete suite of colors. Be sure to monitor contrast ratios as you customize colors.</p>
+<p>All variables in the <code>$colors</code> map are defined as standalone variables. To modify an existing color in our <code>$colors</code> map, add the following to your custom Sass file:</p>
+<pre><code class="language-scss">$blue:    #3b6eff;
+$indigo:  #6366F1;
+$purple:  #5F1F7A;
+$pink:    #FF92AE;
+$red:     #F16063;
+$orange:  #F7936F;
+$yellow:  #fdb813;
+$green:   #66CB9F;
+$teal:    #4DD9CB;
+$cyan:    #68DBF2;
+</code></pre>
+<hr />
+<h2><a id="user-content-theme-colors" href="colors.html#theme-colors" name="theme-colors" class="heading-permalink" aria-hidden="true" title="">¶</a>Theme colors</h2>
+<p>We use a subset of all colors to create a smaller color palette for generating color schemes, also available as Sass variables. This enables more comprehensive customization and extension for any project.</p>
+<h3><a id="user-content-available-theme-colors" href="colors.html#available-theme-colors" name="available-theme-colors" class="heading-permalink" aria-hidden="true" title="">¶</a>Available theme colors</h3>
+<div class="row g-6 mb-6">
+    <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-primary"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-capitalize mb-0">primary</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-secondary"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-capitalize mb-0">secondary</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-tertiary"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-capitalize mb-0">tertiary</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-success"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-capitalize mb-0">success</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-warning"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-capitalize mb-0">warning</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-info"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-capitalize mb-0">info</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-danger"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-capitalize mb-0">danger</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<h3><a id="user-content-changing-theme-colors" href="colors.html#changing-theme-colors" name="changing-theme-colors" class="heading-permalink" aria-hidden="true" title="">¶</a>Changing theme colors</h3>
+<p>Since now we have a pre-defined color palette it is easy to change the default theme colors just by swaping the default value. You can use the variable below for customization.</p>
+<pre><code class="language-scss">$primary:       $indigo;
+$secondary:     $gray-300;
+$tertiary:      $pink;
+$neutral:       $white;
+$success:       $green;
+$info:          $cyan;
+$warning:       $orange;
+$danger:        $red;
+$light:         $gray-200;
+$dark:          $gray-900;
+</code></pre>
+<hr />
+<h2><a id="user-content-gray-colors" href="colors.html#gray-colors" name="gray-colors" class="heading-permalink" aria-hidden="true" title="">¶</a>Gray colors</h2>
+<h3><a id="user-content-available-gray-colors" href="colors.html#available-gray-colors" name="available-gray-colors" class="heading-permalink" aria-hidden="true" title="">¶</a>Available gray colors</h3>
+<p>Each gray color has a specific use in our themes. Some of them are used for backgrounds, some of them are used for component properties or text colors.</p>
+<div class="row g-6">
+        <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-gray-50"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-capitalize mb-0">50</span>
+                    <span class="d-block text-sm text-muted">bg-gray-50</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-gray-100"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-capitalize mb-0">100</span>
+                    <span class="d-block text-sm text-muted">bg-gray-100</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-gray-200"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-capitalize mb-0">200</span>
+                    <span class="d-block text-sm text-muted">bg-gray-200</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-gray-300"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-capitalize mb-0">300</span>
+                    <span class="d-block text-sm text-muted">bg-gray-300</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-gray-400"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-capitalize mb-0">400</span>
+                    <span class="d-block text-sm text-muted">bg-gray-400</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-gray-500"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-capitalize mb-0">500</span>
+                    <span class="d-block text-sm text-muted">bg-gray-500</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-gray-600"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-capitalize mb-0">600</span>
+                    <span class="d-block text-sm text-muted">bg-gray-600</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-gray-700"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-capitalize mb-0">700</span>
+                    <span class="d-block text-sm text-muted">bg-gray-700</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-gray-800"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-capitalize mb-0">800</span>
+                    <span class="d-block text-sm text-muted">bg-gray-800</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-gray-900"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-capitalize mb-0">900</span>
+                    <span class="d-block text-sm text-muted">bg-gray-900</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<h3><a id="user-content-how-to-use-gray-colors" href="colors.html#how-to-use-gray-colors" name="how-to-use-gray-colors" class="heading-permalink" aria-hidden="true" title="">¶</a>How to use gray colors</h3>
+<p>Each gray shade was specially created to be used in certain situations. The table below will give you an idea of how we use them:</p>
+<table class="table table-bordered color-palette mt-4">
+    <thead>
+        <tr>
+            <th scope="col">Color</th>
+            <th scope="col">Usage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="d-flex align-items-center">
+                <div class="color color-sm bg-gray-50 me-3"></div>
+                Gray 50
+            </td>
+            <td>Alternate backgrounds</td>
+        </tr>
+        <tr>
+            <td class="d-flex align-items-center">
+                <div class="color color-sm bg-gray-100 me-3"></div>
+                Gray 100
+            </td>
+            <td>Base backgrounds</td>
+        </tr>
+        <tr>
+            <td class="d-flex align-items-center">
+                <div class="color color-sm bg-gray-200 me-3"></div>
+                Gray 200
+            </td>
+            <td>Base backgrounds</td>
+        </tr>
+        <tr>
+            <td class="d-flex align-items-center">
+                <div class="color color-sm bg-gray-300 me-3"></div>
+                Gray 300
+            </td>
+            <td>Base backgrounds</td>
+        </tr>
+        <tr>
+            <td class="d-flex align-items-center">
+                <div class="color color-sm bg-gray-400 me-3"></div>
+                Gray 400
+            </td>
+            <td>Base backgrounds</td>
+        </tr>
+        <tr>
+            <td class="d-flex align-items-center">
+                <div class="color color-sm bg-gray-500 me-3"></div>
+                Gray 500
+            </td>
+            <td>Disabled text</td>
+        </tr>
+        <tr>
+            <td class="d-flex align-items-center">
+                <div class="color color-sm bg-gray-600 me-3"></div>
+                Gray 600
+            </td>
+            <td>Placeholder and muted text</td>
+        </tr>
+        <tr>
+            <td class="d-flex align-items-center">
+                <div class="color color-sm bg-gray-700 me-3"></div>
+                Gray 700
+            </td>
+            <td>Base text colors</td>
+        </tr>
+        <tr>
+            <td class="d-flex align-items-center">
+                <div class="color color-sm bg-gray-800 me-3"></div>
+                Gray 800
+            </td>
+            <td>Alternate text color</td>
+        </tr>
+        <tr>
+            <td class="d-flex align-items-center">
+                <div class="color color-sm bg-gray-900 me-3"></div>
+                Gray 900
+            </td>
+            <td>Text color used on heading, titles</td>
+        </tr>
+    </tbody>
+</table>
+<h3><a id="user-content-changing-gray-colors" href="colors.html#changing-gray-colors" name="changing-gray-colors" class="heading-permalink" aria-hidden="true" title="">¶</a>Changing gray colors</h3>
+<p>Inside the variables file you will find the pre-defined gray colors and Sass map. Here’s an example of the variables used:</p>
+<pre><code class="language-scss">$gray-50:  #FAFAFA;
+$gray-100: #F7FAFC;
+$gray-200: #EDF2F7;
+$gray-300: #E2E8F0;
+$gray-400: #CBD5E0;
+$gray-500: #A0AEC0;
+$gray-600: #718096;
+$gray-700: #425466;
+$gray-800: #2D3748;
+$gray-900: #1A202C;
+</code></pre>
+<hr />
+<h2><a id="user-content-using-colors" href="colors.html#using-colors" name="using-colors" class="heading-permalink" aria-hidden="true" title="">¶</a>Using colors</h2>
+<p>There's wide range of shorthand responsive color, background, and border utility classes to modify an element’s appearance.</p>
+<div class="mt-6">
+    <div class="row g-6">
+        <div class="col-md-6">
+            <div class="border rounded p-6 shadow-hover position-relative">
+                <a href="https://taddart.io/docs/css/v1/color" class="d-block h6 mb-2 text-primary stretched-link">Text Colors</a>
+                <p class="text-sm">Convey meaning through color with a handful of color utility classes.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="border rounded p-6 shadow-hover position-relative">
+                <a href="backgrounds.html" class="d-block h6 mb-2 text-primary stretched-link">Background Color</a>
+                <p class="text-sm">Convey meaning through background-color and add decoration with gradients.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="border rounded p-6 shadow-hover position-relative">
+                <a href="https://taddart.io/docs/css/v1/border-color" class="d-block h6 mb-2 text-primary stretched-link">Border Color</a>
+                <p class="text-sm">Use border utilities to quickly style the border and border-radius of an element.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="border rounded p-6 shadow-hover position-relative">
+                <a href="https://taddart.io/docs/css/v1/gradient" class="d-block h6 mb-2 text-primary stretched-link">Gradients</a>
+                <p class="text-sm">Utilities for generating beautiful gradients in your HTML.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+						</article>
+					</div>
+					<div class="w-lg-1/5">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+				</div>
+			</main>
+
+			
+		</div>
+
+		<!-- Cookie consent -->
+		<div class="w-72 position-fixed bottom-4 start-4 overlap-1000 rounded-3 bg-dark text-white shadow-soft-5 js-cookie-consent cookie-consent ">
+  <div class="d-flex flex-column gap-4 p-6">
+    <div class="w-16 svg-fluid">
+      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><g id="flat"><path d="M59,28a8,8,0,0,1-7.948-7.111,7.982,7.982,0,0,1-11.761-9A7.955,7.955,0,0,1,38,12a8,8,0,0,1-8-8,8.126,8.126,0,0,1,.058-.928A29,29,0,1,0,60.7,27.816,8.024,8.024,0,0,1,59,28Z" style="fill:#a65c2e"/><path d="M60.7,27.816a7.987,7.987,0,0,1-9.643-6.927,7.974,7.974,0,0,1-3.088,1.045A33.5,33.5,0,0,1,14.5,54c-.478,0-.952-.016-1.424-.036A28.99,28.99,0,0,0,60.7,27.816Z" style="fill:#964c1e"/><circle cx="29" cy="28" r="4" style="fill:#663318"/><circle cx="22" cy="48" r="4" style="fill:#663318"/><circle cx="44" cy="48" r="4" style="fill:#663318"/><circle cx="13" cy="32" r="2" style="fill:#854219"/><circle cx="37" cy="42" r="2" style="fill:#854219"/><circle cx="48" cy="30" r="2" style="fill:#854219"/><path d="M18.584,13.315l-1.168-1.623a25.056,25.056,0,0,1,3.125-1.917l.918,1.778A22.979,22.979,0,0,0,18.584,13.315Z" style="fill:#c47747"/><path d="M9.994,25.291,8.08,24.709a25,25,0,0,1,7.253-11.343l1.334,1.49A23,23,0,0,0,9.994,25.291Z" style="fill:#c47747"/></g></svg>
+    </div>
+    <span class="text-sm font-semibold cookie-consent__message">
+        Votre expérience sur ce site sera améliorée en autorisant les cookies.
+    </span>
+    <button class="btn btn-sm btn-white js-cookie-consent-agree cookie-consent__agree">
+        Autorisez les cookies
+    </button>
+  </div>
+</div>
+
+    <script>
+
+        window.laravelCookieConsent = (function () {
+
+            const COOKIE_VALUE = 1;
+            const COOKIE_DOMAIN = '.taddart.io';
+
+            function consentWithCookies() {
+                setCookie('taddart_cookie_consent', COOKIE_VALUE, 7300);
+                hideCookieDialog();
+            }
+
+            function cookieExists(name) {
+                return (document.cookie.split('; ').indexOf(name + '=' + COOKIE_VALUE) !== -1);
+            }
+
+            function hideCookieDialog() {
+                const dialogs = document.getElementsByClassName('js-cookie-consent');
+
+                for (let i = 0; i < dialogs.length; ++i) {
+                    dialogs[i].style.display = 'none';
+                }
+            }
+
+            function setCookie(name, value, expirationInDays) {
+                const date = new Date();
+                date.setTime(date.getTime() + (expirationInDays * 24 * 60 * 60 * 1000));
+                document.cookie = name + '=' + value
+                    + ';expires=' + date.toUTCString()
+                    + ';domain=' + COOKIE_DOMAIN
+                    + ';path=/'
+                    + ';samesite=lax';
+            }
+
+            if (cookieExists('taddart_cookie_consent')) {
+                hideCookieDialog();
+            }
+
+            const buttons = document.getElementsByClassName('js-cookie-consent-agree');
+
+            for (let i = 0; i < buttons.length; ++i) {
+                buttons[i].addEventListener('click', consentWithCookies);
+            }
+
+            return {
+                consentWithCookies: consentWithCookies,
+                hideCookieDialog: hideCookieDialog
+            };
+        })();
+    </script>
+
+
+		<!-- Noscripts -->
+		<!-- GTM (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MF4DZVH" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  
+		<!-- Scripts -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="../../../js/app-id=68c2722b1fbead28f770.js" defer></script>
+<script src="../../../livewire/livewire-id=c69d0f2801c01fcf8166.js" data-turbo-eval="false" data-turbolinks-eval="false" ></script><script data-turbo-eval="false" data-turbolinks-eval="false" >window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = '1n5YvA0wF811n9eect9ly5OEfmB56JvyzVakJlnb';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
+	</body>
+
+</html>

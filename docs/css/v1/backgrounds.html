@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en" class="antialiased">
+
+	<head>
+
+		<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="csrf-token" content="1n5YvA0wF811n9eect9ly5OEfmB56JvyzVakJlnb">
+<meta name="author" content="taddart">
+<meta property="fb:app_id" content="959738874378368" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@webpxs" />
+<meta name="twitter:title" content="Background Color" />
+<meta name="twitter:description" content="Convey meaning through background and add decoration with gradients." />
+<meta name="twitter:creator" content="@webpxs" />
+
+<meta property="og:url" content="https://taddart.io/docs/css/v1/backgrounds" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Background Color" />
+<meta property="og:description" content="Convey meaning through background and add decoration with gradients." />
+
+<meta property="description" content="Convey meaning through background and add decoration with gradients." />
+
+
+
+<meta name="url" content="https://taddart.io/docs/css/v1/backgrounds" />
+<meta property="og:url" content="https://taddart.io/docs/css/v1/backgrounds" />
+
+
+<link rel="image_src" href="../../../img/og/taddart.jpg" />
+<meta name="image" content="https://taddart.io/img/og/taddart.jpg" />
+<meta property="og:image" content="https://taddart.io/img/og/taddart.jpg" />
+<meta name="twitter:image" content="https://taddart.io/img/og/taddart.jpg" />
+
+<title>Background Color - taddart</title>
+		<!-- Styles -->
+<link rel="stylesheet" type="text/css" href="../../../css/main-id=88bd2dedef769c4dd7ad.css">
+<link rel="stylesheet" type="text/css" href="../../../css/utilities-id=0ba008666fa7d704fbab.css">
+<link rel="stylesheet" type="text/css" href="../../../css/demo-id=969ff5d825cdc67640f6.css">
+
+<!-- Favicon -->
+<link href="../../../img/brand/favicon.png" rel="icon" type="image/png">
+<link href="../../../img/brand/apple-touch.png" rel="apple-touch-icon-precomposed" />
+
+<!-- Vendor -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
+<link rel="stylesheet" href="../../../vendor/icons/css/all.css">
+<link rel="stylesheet" href="../../../vendor/monaco-editor/theme.css">
+<style >[wire\:loading], [wire\:loading\.delay], [wire\:loading\.inline-block], [wire\:loading\.inline], [wire\:loading\.block], [wire\:loading\.flex], [wire\:loading\.table], [wire\:loading\.grid], [wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short], [wire\:loading\.delay\.long], [wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest] {display:none;}[wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}input:-webkit-autofill, select:-webkit-autofill, textarea:-webkit-autofill {animation-duration: 50000s;animation-name: livewireautofill;}@keyframes livewireautofill { from {} }</style>
+		<!-- Plausible -->
+  <script defer data-domain="taddart.io" src="https://plausible.io/js/plausible.js"></script>
+  <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+  <!-- GTM -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MF4DZVH');</script>
+  
+	</head>
+
+	<body class="font-sans">
+
+		
+		<!-- Notifications -->
+				<div wire:id="HN3rFUiwy8oP3wcAWHAD" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;HN3rFUiwy8oP3wcAWHAD&quot;,&quot;name&quot;:&quot;notification&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;docs\/css\/v1\/backgrounds&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[&quot;success&quot;,&quot;warning&quot;,&quot;danger&quot;,&quot;info&quot;]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;832c06c1&quot;,&quot;data&quot;:{&quot;message&quot;:null,&quot;type&quot;:null,&quot;show&quot;:false},&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;ebc333d0d2b7e2c73e21fa11f4ee90aba20dc7be3e34778e4f0e57e933dbf559&quot;}}">
+	</div>
+
+<!-- Livewire Component wire-end:HN3rFUiwy8oP3wcAWHAD -->
+		<!-- Feedback modal -->
+		<div class="modal fade " id="modalFeedback" "tabindex"="-1" "aria-hidden"="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content overflow-hidden shadow-6 rounded-4">
+			
+			<div class="modal-body ">
+				<div class="d-flex justify-content-between align-items-center mb-5">
+			<h5>Share your feedback</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<form wire:id="CLkgK04sISVtaX0uOsaS" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;CLkgK04sISVtaX0uOsaS&quot;,&quot;name&quot;:&quot;feedback.get-feedback&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;docs\/css\/v1\/backgrounds&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;48f82fe8&quot;,&quot;data&quot;:{&quot;title&quot;:null,&quot;text&quot;:null,&quot;rating&quot;:null},&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;88e363edf2163e9c48efeb2ffc9b512dd1d847ee07dd933348c95364faefb622&quot;}}" wire:submit.prevent="save">
+	<input type="hidden" name="_token" value="1n5YvA0wF811n9eect9ly5OEfmB56JvyzVakJlnb">	<div class="mb-5">
+		<input wire:model="title" type="text" class="form-control " name="title" placeholder="Title" />
+			</div>
+	<div class="mb-5">
+		<textarea wire:model="text" rows="4" class="form-control " name="text" data-toggle="autosize" placeholder="Your feedback"></textarea>
+			</div>
+	<div class="d-flex justify-content-between">
+		<div class="hstack gap-2">
+			<input wire:model="rating" type="radio" name="rating-options" class="btn-check" id="rating5" value="5" />
+			<label class="btn btn-sm btn-neutral btn-square text-lg rounded-circle" for="rating5">😍</label>
+			<input wire:model="rating" type="radio" name="rating-options" class="btn-check" id="rating4" value="4" />
+			<label class="btn btn-sm btn-neutral btn-square text-lg rounded-circle" for="rating4">😀</label>
+			<input wire:model="rating" type="radio" name="rating-options" class="btn-check" id="rating3" value="3" />
+			<label class="btn btn-sm btn-neutral btn-square text-lg rounded-circle" for="rating3">😕</label>
+			<input wire:model="rating" type="radio" name="rating-options" class="btn-check" id="rating2" value="2" />
+			<label class="btn btn-sm btn-neutral btn-square text-lg rounded-circle" for="rating2">😓</label>
+		</div>
+		<button type="submit" class="btn btn-sm btn-dark">Send</button>
+	</div>
+</form>
+
+<!-- Livewire Component wire-end:CLkgK04sISVtaX0uOsaS -->
+			</div>
+
+					</div>
+	</div>
+</div>
+
+		<!-- App container -->
+		<div id="app" class="d-flex flex-column min-h-screen">
+
+			
+			
+			<main class="d-flex flex-grow-1">
+				<div class="w-full">
+					<div class="container-fluid pe-lg-0">
+		<div class="d-lg-flex">
+			<div class="w-full w-lg-72 flex-none d-lg-block b-surface-secondary collapse" id="docsSidenavCollapse">
+				<div class="position-lg-sticky top-lg-0">
+					<div class="overflow-y-auto border-end-lg pe-7 h-lg-calc" style="--w-h-lg: 0;">
+						<div class="d-lg-block py-3">
+							<div class="vstack gap-8">
+  <!-- Logo -->
+  <a class="navbar-brand d-flex align-items-center gap-3" href="installation.html">
+    <div class="w-md-auto  text-dark">
+  <svg class="w-auto h-8" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 500C0 223.858 223.858 0 500 0C776.142 0 1000 223.858 1000 500C1000 776.142 776.142 1000 500 1000C223.858 1000 0 776.142 0 500Z" fill="currentColor"/>
+    <path d="M200.586 392.877C181.963 360.623 193.015 319.379 225.269 300.757C257.524 282.135 298.767 293.186 317.39 325.44L494.411 632.051C513.033 664.305 501.982 705.549 469.728 724.171C437.473 742.793 396.229 731.742 377.607 699.488L200.586 392.877Z" fill="white"/>
+    <path d="M453.948 392.877C435.326 360.623 446.377 319.379 478.631 300.757C510.886 282.135 552.129 293.186 570.752 325.44L747.773 632.051C766.395 664.305 755.344 705.549 723.09 724.171C690.835 742.793 649.591 731.742 630.969 699.488L453.948 392.877Z" fill="white"/>
+    <path d="M673.592 334.475C673.592 297.231 703.784 267.039 741.029 267.039C778.273 267.039 808.465 297.231 808.465 334.475C808.465 371.72 778.273 401.912 741.029 401.912C703.784 401.912 673.592 371.72 673.592 334.475Z" fill="white"/>
+  </svg>
+</div>
+    <span class="text-heading font-bold ls-tight">taddart Docs</span>
+  </a>
+  <!-- Shortcuts -->
+	<div class="vstack gap-3">
+		<div class="d-flex align-items-center">
+			<div>
+				<div class="icon icon-shape w-7 h-7 border text-xs rounded text-transparent bg-clip-text gradient-bottom-right start-blue-500 end-cyan-500">
+					<i class="far fa-books"></i>
+				</div>
+			</div>
+			<div class="ps-3">
+				<a href="https://taddart.io/docs/css" class="d-block text-sm text-heading font-semibold mb-0">Data Warehousing</a>
+			</div>
+		</div>
+		<div class="d-flex align-items-center">
+			<div>
+				<div class="icon icon-shape w-7 h-7 border text-xs rounded text-transparent bg-clip-text gradient-bottom-right start-pink-500 end-purple-400">
+					<i class="far fa-clone"></i>
+				</div>
+			</div>
+			<div class="ps-3">
+				<a href="../../../components.html" class="d-block text-sm text-muted text-heading-hover font-semibold mb-0">Components</a>
+			</div>
+		</div>
+		<div class="d-flex align-items-center">
+			<div>
+				<div class="icon icon-shape w-7 h-7 border text-xs rounded text-transparent bg-clip-text gradient-bottom-right start-purple-500 end-cyan-500">
+					<i class="far fa-columns"></i>
+				</div>
+			</div>
+			<div class="ps-3">
+				<a href="../../../Data Discovery.html" class="d-block text-sm text-muted text-heading-hover font-semibold mb-0">Data Discovery</a>
+			</div>
+		</div>
+    	</div>
+  <div>
+      	<div class="d-flex align-items-center text-xs text-heading font-bold ls-wider text-uppercase mb-2" data-bs-toggle="collapse" href="#collapse-getting-started" role="button" aria-expanded="true" aria-controls="collapse-getting-started">
+  		<div>
+  			Getting started
+  		</div>
+  		<div class="ms-auto text-muted">
+  			<i class="far fa-angle-down"></i>
+  		</div>
+  	</div>
+  	  	<div class="collapse show mt-5" id="collapse-getting-started">
+  		<ul class="nav flex-column gap-3">
+  			  			  			<li class="nav-item">
+  				<a href="welcome.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Welcome
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="installation.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Installation
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="quick-start.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Quick Start
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="build-tools.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Build Tools
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="optimize.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Optimize
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="browser-support.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Browser Support
+            </span>
+  				</a>
+  			</li>
+  			  			  		</ul>
+  	</div>
+  	  	  	<div class="d-flex align-items-center text-xs text-heading font-bold ls-wider text-uppercase mb-2 mt-8" data-bs-toggle="collapse" href="#collapse-foundation" role="button" aria-expanded="true" aria-controls="collapse-foundation">
+  		<div>
+  			Foundation
+  		</div>
+  		<div class="ms-auto text-muted">
+  			<i class="far fa-angle-down"></i>
+  		</div>
+  	</div>
+  	  	<div class="collapse show mt-5" id="collapse-foundation">
+  		<ul class="nav flex-column gap-3">
+  			  			  			<li class="nav-item">
+  				<a href="theme.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Themes
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="breakpoints.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Breakpoints
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="functions.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Functions
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="utilities.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Utilities
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="colors.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Colors
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="typography.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Typography
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="spacing.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Spacing
+            </span>
+  				</a>
+  			</li>
+  			  			  		</ul>
+  	</div>
+  	  	  	<div class="d-flex align-items-center text-xs text-heading font-bold ls-wider text-uppercase mb-2 mt-8" data-bs-toggle="collapse" href="#collapse-layout" role="button" aria-expanded="true" aria-controls="collapse-layout">
+  		<div>
+  			Layout
+  		</div>
+  		<div class="ms-auto text-muted">
+  			<i class="far fa-angle-down"></i>
+  		</div>
+  	</div>
+  	  	<div class="collapse show mt-5" id="collapse-layout">
+  		<ul class="nav flex-column gap-3">
+  			  			  			<li class="nav-item">
+  				<a href="containers.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Containers
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="grid.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Grid
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="columns.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Columns
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="gutters.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Gutters
+            </span>
+  				</a>
+  			</li>
+  			  			  		</ul>
+  	</div>
+  	  	  	<div class="d-flex align-items-center text-xs text-heading font-bold ls-wider text-uppercase mb-2 mt-8" data-bs-toggle="collapse" href="#collapse-utilities" role="button" aria-expanded="true" aria-controls="collapse-utilities">
+  		<div>
+  			Utilities
+  		</div>
+  		<div class="ms-auto text-muted">
+  			<i class="far fa-angle-down"></i>
+  		</div>
+  	</div>
+  	  	<div class="collapse show mt-5" id="collapse-utilities">
+  		<ul class="nav flex-column gap-3">
+  			  			  			<li class="nav-item">
+  				<a href="backgrounds.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded bg-primary bg-opacity-10 text-primary font-bold">
+              Backgrounds
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="borders.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Borders
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="display.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Display
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="flex.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Flex
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="float.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Floats
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="interactions.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Interactions
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="opacity.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Opacity
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="overflow.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Overflow
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="position.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Position
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="shadow.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Shadow
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="width.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Sizing
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="spacing.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Spacing
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			  			  			<li class="nav-item">
+  				<a href="transform.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Transforms
+            </span>
+  				</a>
+  			</li>
+  			  			  			  			<li class="nav-item">
+  				<a href="transition-property.html" class="nav-link p-0">
+  					<span class="px-2 py-1 rounded ">
+              Transition
+            </span>
+  				</a>
+  			</li>
+  			  			  		</ul>
+  	</div>
+  	  	  </div>
+</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="min-w-0 w-full flex-fill max-h-full overflow-visible">
+				<div class="navbar navbar-light bg-white border-bottom px-0 py-4 mx-lg-20" id="topbar">
+			    <div class="container-fluid px-0">
+						<!-- Docsearch -->
+						<div class="form-inline w-sm-80 me-3">
+							<div id="docsearch"></div>
+						</div>
+						<!-- Breadcrumbs -->
+						<nav aria-label="breadcrumb" class="d-sm-block ms-sm-auto">
+							<ol class="breadcrumb">
+									<li class="breadcrumb-item">
+										<a href="installation.html" class="text-muted">Docs</a>
+									</li>
+									<li class="breadcrumb-item">
+										<a href="installation.html" class="text-muted">taddart CSS</a>
+									</li>
+									<li class="breadcrumb-item dropdown" aria-current="page">
+										<a href="backgrounds.html#" class="text-heading font-bold">
+											v1.x
+										</a>
+									</li>
+							</ol>
+						</nav>
+			    </div>
+				</div>
+				<div class="d-flex w-full">
+					<div class="min-w-0 flex-1 px-lg-20 py-10">
+						<article class="article">
+							<h1 class="ls-tight font-bolder mb-1">Background Color</h1>
+
+														<p class="mt-3 mb-5">
+								Convey meaning through background and add decoration with gradients.
+							</p>
+							
+														<div class="mt-5 mb-5">
+								<div class="d-flex align-items-center">
+    <div class="me-3">
+        👉
+    </div>
+    <div class="scrollable-x">
+                        <a class=" text-heading font-bold" href="backgrounds.html">background-color</a>
+        <span class="me-2">, </span>
+                                                <a class=" font-semibold" href="https://taddart.io/docs/css/v1/gradient">gradient</a>
+        <span class="me-2"></span>
+                    </div>
+</div>
+							</div>
+														<hr class="my-4 my-lg-10">
+														
+														<!-- Markdown -->
+							<ul class="table-of-contents">
+<li>
+<p><a href="backgrounds.html#available-colors">Available colors</a></p>
+<ul>
+<li>
+<p><a href="backgrounds.html#theme-colors-semantic">Theme colors (Semantic)</a></p>
+</li>
+<li>
+<p><a href="backgrounds.html#shades">Shades</a></p>
+</li>
+<li>
+<p><a href="backgrounds.html#gradients">Gradients</a></p>
+</li>
+<li>
+<p><a href="backgrounds.html#gray-colors">Gray Colors</a></p>
+</li>
+<li>
+<p><a href="backgrounds.html#surface-colors">Surface Colors</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="backgrounds.html#usage">Usage</a></p>
+</li>
+<li>
+<p><a href="backgrounds.html#customizing">Customizing</a></p>
+</li>
+</ul>
+<h2><a id="user-content-available-colors" href="backgrounds.html#available-colors" name="available-colors" class="heading-permalink" aria-hidden="true" title="">¶</a>Available colors</h2>
+<p>This design system is all about making your website look amazing. Colors are an important aspect of it so we took the time to create a comprehensive color system, supporting different usage scenarios, and make it super-friendly to future changes and dark mode.</p>
+<p>Similar to the contextual text color classes, set the background of an element to any contextual class. Background utilities do not set color, so in some cases you’ll want to use <code>.text-*</code> color utilities.</p>
+<h3><a id="user-content-theme-colors-semantic" href="backgrounds.html#theme-colors-semantic" name="theme-colors-semantic" class="heading-permalink" aria-hidden="true" title="">¶</a>Theme colors (Semantic)</h3>
+<p>Semantic colors denote standard value states (such as good, bad, or warning). Each color has the same basic meaning in all contexts. It also helps you set your brand's colors and remain consistent when using it throughout the website using the <code>.bg-primary</code>, <code>.bg-secondary</code>, and <code>.bg-tertiary</code> classes.</p>
+<div class="row g-6 mt-5 mb-6">
+    <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-primary"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold mb-1 user-select-all">.bg-primary</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-secondary"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-monospace mb-0 user-select-all">.bg-secondary</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-tertiary"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-monospace mb-0 user-select-all">.bg-tertiary</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row g-6 mb-6">
+    <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-success"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-monospace mb-0 user-select-all">.bg-success</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-warning"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-monospace mb-0 user-select-all">.bg-warning</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-info"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-monospace mb-0 user-select-all">.bg-info</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-danger"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-monospace mb-0 user-select-all">.bg-danger</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr />
+<h3><a id="user-content-shades" href="backgrounds.html#shades" name="shades" class="heading-permalink" aria-hidden="true" title="">¶</a>Shades</h3>
+<p>Each theme color has a lighter or darker variant. Use <code>.bg-tint-COLOR</code> or <code>.bg-shade-COLOR</code> to use it.</p>
+<div class="row color-palette g-6 mt-5 mb-6">
+    <div class="col-6 col-sm-3 my-3 color-group">
+        <div class="color w-full bg-tint-primary"></div>
+        <div class="color w-full bg-shade-primary"></div>
+    </div>
+    <div class="col-6 col-sm-3 my-3 color-group">
+        <div class="color w-full bg-tint-secondary"></div>
+        <div class="color w-full bg-shade-secondary"></div>
+    </div>
+    <div class="col-6 col-sm-3 my-3 color-group">
+        <div class="color w-full bg-tint-tertiary"></div>
+        <div class="color w-full bg-shade-tertiary"></div>
+    </div>
+</div>
+<div class="row color-palette g-6">
+    <div class="col-6 col-sm-3 my-3 color-group">
+        <div class="color w-full bg-tint-success"></div>
+        <div class="color w-full bg-shade-success"></div>
+    </div>
+    <div class="col-6 col-sm-3 my-3 color-group">
+        <div class="color w-full bg-tint-warning"></div>
+        <div class="color w-full bg-shade-warning"></div>
+    </div>
+    <div class="col-6 col-sm-3 my-3 color-group">
+        <div class="color w-full bg-tint-info"></div>
+        <div class="color w-full bg-shade-info"></div>
+    </div>
+    <div class="col-6 col-sm-3 my-3 color-group">
+        <div class="color w-full bg-tint-danger"></div>
+        <div class="color w-full bg-shade-danger"></div>
+    </div>
+</div>
+<hr />
+<h3><a id="user-content-gradients" href="backgrounds.html#gradients" name="gradients" class="heading-permalink" aria-hidden="true" title="">¶</a>Gradients</h3>
+<p>By adding a <code>.bg-gradient</code> class, a linear gradient is added as background image to the backgrounds. This gradient starts with a semi-transparent white which fades out to the bottom.</p>
+<div class="row g-6 mb-6">
+    <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-primary bg-gradient"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold mb-1 user-select-all">.bg-gradient .bg-primary</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-gradient bg-secondary"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-monospace mb-0 user-select-all">.bg-gradient .bg-secondary</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-gradient bg-tertiary"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-monospace mb-0 user-select-all">.bg-gradient .bg-tertiary</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row g-6 mb-6">
+    <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-gradient bg-success"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-monospace mb-0 user-select-all">.bg-gradient .bg-success</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-gradient bg-warning"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-monospace mb-0 user-select-all">.bg-gradient .bg-warning</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-gradient bg-info"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-monospace mb-0 user-select-all">.bg-gradient .bg-info</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-gradient bg-danger"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-monospace mb-0 user-select-all">.bg-gradient .bg-danger</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<p>If you need to build more complex gradients, see the dedicated <a href="https://taddart.io/docs/css/v1/gradient">utility class for gradients</a>.</p>
+<hr />
+<h3><a id="user-content-gray-colors" href="backgrounds.html#gray-colors" name="gray-colors" class="heading-permalink" aria-hidden="true" title="">¶</a>Gray Colors</h3>
+<div class="row g-6 mt-5 mb-6">
+    <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-gray-100"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold mb-1 user-select-all">.bg-gray-100</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-gray-200"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-monospace mb-0 user-select-all">.bg-gray-200</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-gray-300"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-monospace mb-0 user-select-all">.bg-gray-300</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-gray-400"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-monospace mb-0 user-select-all">.bg-gray-400</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-gray-500"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-monospace mb-0 user-select-all">.bg-gray-500</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-gray-600"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-monospace mb-0 user-select-all">.bg-gray-600</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-gray-700"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-monospace mb-0 user-select-all">.bg-gray-700</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-gray-800"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-monospace mb-0 user-select-all">.bg-gray-800</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-24 bg-gray-900"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-monospace mb-0 user-select-all">.bg-gray-900</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr />
+<h3><a id="user-content-surface-colors" href="backgrounds.html#surface-colors" name="surface-colors" class="heading-permalink" aria-hidden="true" title="">¶</a>Surface Colors</h3>
+<p>Start using these surface colors to add a background color on large areas, such the <code>body</code> or <code>sections</code>. This is extremely helpful, especially when you want to make use of light/dark mode. With a few variables all your website adapts to any theme you might use.</p>
+<div class="row g-6 mt-0 mb-6">
+    <div class="col-6">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-56 bg-surface-primary"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold mb-1 user-select-all">.bg-surface-primary</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-56 bg-surface-secondary"></div>
+                <div class="p-4 text-limit">
+                    <span class="d-block h6 text-sm font-semibold text-monospace mb-0 user-select-all">.bg-surface-secondary</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-56 bg-surface-light"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-monospace mb-0 user-select-all">.bg-surface-light</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="">
+                <div class="card-img-top d-block h-56 bg-surface-dark"></div>
+                <div class="p-4">
+                    <span class="d-block h6 text-sm font-semibold text-monospace mb-0 user-select-all">.bg-surface-dark</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr />
+<h2><a id="user-content-usage" href="backgrounds.html#usage" name="usage" class="heading-permalink" aria-hidden="true" title="">¶</a>Usage</h2>
+<div class="docs-example bg-surface-secondary p-10">
+    <div class="bg-primary rounded h-24"></div>
+</div>
+<pre><code class="language-html">&lt;div class=&quot;bg-primary&quot;&gt;&lt;/div&gt;
+</code></pre>
+<h2><a id="user-content-customizing" href="backgrounds.html#customizing" name="customizing" class="heading-permalink" aria-hidden="true" title="">¶</a>Customizing</h2>
+<p>Learn how to change the default colors in the <a href="colors.html">styleguide</a> section.</p>
+
+						</article>
+					</div>
+					<div class="w-lg-1/5">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+				</div>
+			</main>
+
+			
+		</div>
+
+		<!-- Cookie consent -->
+		<div class="w-72 position-fixed bottom-4 start-4 overlap-1000 rounded-3 bg-dark text-white shadow-soft-5 js-cookie-consent cookie-consent ">
+  <div class="d-flex flex-column gap-4 p-6">
+    <div class="w-16 svg-fluid">
+      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><g id="flat"><path d="M59,28a8,8,0,0,1-7.948-7.111,7.982,7.982,0,0,1-11.761-9A7.955,7.955,0,0,1,38,12a8,8,0,0,1-8-8,8.126,8.126,0,0,1,.058-.928A29,29,0,1,0,60.7,27.816,8.024,8.024,0,0,1,59,28Z" style="fill:#a65c2e"/><path d="M60.7,27.816a7.987,7.987,0,0,1-9.643-6.927,7.974,7.974,0,0,1-3.088,1.045A33.5,33.5,0,0,1,14.5,54c-.478,0-.952-.016-1.424-.036A28.99,28.99,0,0,0,60.7,27.816Z" style="fill:#964c1e"/><circle cx="29" cy="28" r="4" style="fill:#663318"/><circle cx="22" cy="48" r="4" style="fill:#663318"/><circle cx="44" cy="48" r="4" style="fill:#663318"/><circle cx="13" cy="32" r="2" style="fill:#854219"/><circle cx="37" cy="42" r="2" style="fill:#854219"/><circle cx="48" cy="30" r="2" style="fill:#854219"/><path d="M18.584,13.315l-1.168-1.623a25.056,25.056,0,0,1,3.125-1.917l.918,1.778A22.979,22.979,0,0,0,18.584,13.315Z" style="fill:#c47747"/><path d="M9.994,25.291,8.08,24.709a25,25,0,0,1,7.253-11.343l1.334,1.49A23,23,0,0,0,9.994,25.291Z" style="fill:#c47747"/></g></svg>
+    </div>
+    <span class="text-sm font-semibold cookie-consent__message">
+        Votre expérience sur ce site sera améliorée en autorisant les cookies.
+    </span>
+    <button class="btn btn-sm btn-white js-cookie-consent-agree cookie-consent__agree">
+        Autorisez les cookies
+    </button>
+  </div>
+</div>
+
+    <script>
+
+        window.laravelCookieConsent = (function () {
+
+            const COOKIE_VALUE = 1;
+            const COOKIE_DOMAIN = '.taddart.io';
+
+            function consentWithCookies() {
+                setCookie('taddart_cookie_consent', COOKIE_VALUE, 7300);
+                hideCookieDialog();
+            }
+
+            function cookieExists(name) {
+                return (document.cookie.split('; ').indexOf(name + '=' + COOKIE_VALUE) !== -1);
+            }
+
+            function hideCookieDialog() {
+                const dialogs = document.getElementsByClassName('js-cookie-consent');
+
+                for (let i = 0; i < dialogs.length; ++i) {
+                    dialogs[i].style.display = 'none';
+                }
+            }
+
+            function setCookie(name, value, expirationInDays) {
+                const date = new Date();
+                date.setTime(date.getTime() + (expirationInDays * 24 * 60 * 60 * 1000));
+                document.cookie = name + '=' + value
+                    + ';expires=' + date.toUTCString()
+                    + ';domain=' + COOKIE_DOMAIN
+                    + ';path=/'
+                    + ';samesite=lax';
+            }
+
+            if (cookieExists('taddart_cookie_consent')) {
+                hideCookieDialog();
+            }
+
+            const buttons = document.getElementsByClassName('js-cookie-consent-agree');
+
+            for (let i = 0; i < buttons.length; ++i) {
+                buttons[i].addEventListener('click', consentWithCookies);
+            }
+
+            return {
+                consentWithCookies: consentWithCookies,
+                hideCookieDialog: hideCookieDialog
+            };
+        })();
+    </script>
+
+
+		<!-- Noscripts -->
+		<!-- GTM (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MF4DZVH" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  
+		<!-- Scripts -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="../../../js/app-id=68c2722b1fbead28f770.js" defer></script>
+<script src="../../../livewire/livewire-id=c69d0f2801c01fcf8166.js" data-turbo-eval="false" data-turbolinks-eval="false" ></script><script data-turbo-eval="false" data-turbolinks-eval="false" >window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = '1n5YvA0wF811n9eect9ly5OEfmB56JvyzVakJlnb';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
+	</body>
+
+</html>
